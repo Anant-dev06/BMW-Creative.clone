@@ -1,0 +1,863 @@
+/* CSS PART FOR MOTORRAD PAGE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #252525;
+    font-family: "Nunito";
+    color: white;
+    background-color: #212326;
+    position: absolute;
+}
+
+
+#nav-bar {
+    height: 12vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+#nav-content {
+    height: 12vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+#left-nav {
+    height: 9vh;
+    width: 45dvw;
+    /* background-color: #f56969; */
+    margin-left: 1vw;
+    display: flex;
+    gap: 40px;
+}
+
+#sbox {
+    display: none;
+    background-color: rgb(238, 240, 242);
+    height: 6dvh;
+    width: 50%;
+    margin-top: 2dvh;
+    align-items: center;
+    outline: 2px solid rgb(248, 138, 83);
+}
+
+.srbox {
+    background-color: rgb(238, 240, 242);
+    font-weight: 300;
+}
+
+#ssrc {
+    font-weight: 400;
+    background-color: rgb(238, 240, 242);
+}
+
+#sbox input {
+    padding-left: 3px;
+    font-size: x-large;
+    font-weight: 400;
+    border: 0px;
+    height: 6dvh;
+    width: 89%;
+    outline: 0px;
+}
+
+
+#left-nav i {
+    align-self: center;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+#left-nav i:hover {
+    color: cornflowerblue;
+}
+
+#right-nav {
+    height: 9vh;
+    width: 12%;
+    /* background-color: aquamarine; */
+    margin-right: 1vw;
+    display: flex;
+}
+
+#right-nav img {
+    align-self: center;
+    height: 5vh;
+    width: 3vw;
+    margin-right: 3px;
+}
+
+#right-nav h1 {
+    align-self: center;
+    font-size: xx-large;
+    font-weight: x-bolder;
+    text-decoration: double;
+    letter-spacing: 2px;
+    line-height: 80%;
+}
+
+#hero {
+    height: 80vh;
+    width: 100%;
+    /* background-color: bisque; */
+    background-image: url(moto-hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-over {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    /* background-color: chartreuse; */
+    margin-left: 2vw;
+}
+
+#hero-content {
+    position: absolute;
+    top: 24%;
+    /* background-color: blue; */
+    align-self: center;
+    height: fit-content;
+    color: aliceblue;
+}
+
+#hero-content h1 {
+    font-size: 7vh;
+    margin-bottom: 2vh;
+}
+
+#hero-content h2 {
+    font-size: 6vh;
+    margin-bottom: 3vh;
+}
+
+#hero-content button {
+    width: 14vw;
+    height: 5vh;
+    font-size: medium;
+    border: 2px solid transparent;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-weight: 600;
+    text-indent: 2%;
+}
+
+#hero-content button:hover {
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    background-color: rgb(32, 32, 244);
+    color: white;
+}
+
+#lower-panel {
+    height: 13vh;
+    width: 100%;
+    background-color: #16171A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#panel-content {
+    color: white;
+    /* height: fit-content; */
+    align-items: center;
+    /* background-color: aqua; */
+    background-color: #16171A;
+    font-size: x-large;
+    gap: 10px;
+}
+
+#panel-content i {
+    margin-left: 2vw;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    /* background-color: darkcyan; */
+    margin-top: 13vh;
+}
+
+#main-content {
+    display: flex;
+}
+
+#main-nav {
+    height: 5dvh;
+    width: 80%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+
+}
+
+#main-nav a {
+    font-size: xx-large;
+    /* font-weight: 300; */
+}
+
+#main-nav a:hover {
+    font-weight: bold;
+    color: #0062FF;
+}
+
+#product {
+    height: 100%;
+    width: 97vw;
+    justify-self: center;
+    /* background-color: bisque; */
+}
+
+#p1 {
+    height: 56vh;
+    width: 100%;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#img1 {
+    position: relative;
+    height: 100%;
+    width: 49.5%;
+    background-image: url(IMG-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#over1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    bottom: 0px;
+    height: 15dvh;
+    width: 50%;
+    background-color: white;
+    color: black;
+}
+
+#over1-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over1-item h2 {
+    margin-top: 2dvh;
+}
+
+#over1-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr1 {
+    margin-top: 2dvh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+
+#img2 {
+    position: relative;
+    height: 100%;
+    width: 49.5%;
+    background-image: url(IMG-2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#over2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    bottom: 0px;
+    height: 15dvh;
+    width: 50%;
+    background-color: white;
+    color: black;
+}
+
+#over2-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over2-item h2 {
+    margin-top: 2dvh;
+}
+
+#over2-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr2 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#p2 {
+    height: 56vh;
+    width: 100%;
+    margin-top: 2vh;
+    /* background-color: deeppink; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#img3 {
+    position: relative;
+    height: 100%;
+    width: 24%;
+    background-image: url(m-1000-rr.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#over3 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#over3-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over3-item h2 {
+    margin-top: 2dvh;
+}
+
+#over3-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr3 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#img4 {
+    position: relative;
+    height: 100%;
+    width: 24%;
+    background-image: url(bmw-boxer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#over4 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #212326;
+}
+
+#over4-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over4-item h2 {
+    margin-top: 2dvh;
+}
+
+#over4-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr4 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#img5 {
+    position: relative;
+    height: 100%;
+    width: 24%;
+    background-image: url(bmw-gs1250.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#over5 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#over5-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over5-item h2 {
+    margin-top: 2dvh;
+}
+
+#over5-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr5 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#img6 {
+    position: relative;
+    height: 100%;
+    width: 24%;
+    background-image: url(r-1300-gs2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#over6 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#over6-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over6-item h2 {
+    margin-top: 2dvh;
+}
+
+#over6-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr6 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#p3 {
+    height: 56vh;
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#img7 {
+    position: relative;
+    height: 100%;
+    width: 24%;
+    background-image: url(m-1000-xr.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#over7 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#over7-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over7-item h2 {
+    margin-top: 2dvh;
+}
+
+#over7-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr7 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#img8 {
+    position: relative;
+    height: 100%;
+    width: 49.5%;
+    background-image: url(bmw-concept-rr.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#over8 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 60%;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#over8-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over8-item h2 {
+    margin-top: 2dvh;
+}
+
+#over8-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr8 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#img9 {
+    height: 100%;
+    width: 24%;
+    background-color: #0062FF;
+}
+
+#img9-item {
+    height: 10dvh;
+    margin-left: 1dvw;
+    margin-top: 20dvh;
+}
+
+#ytlogo {
+    font-size: 60px;
+    margin-bottom: 10dvh;
+}
+
+#img9-item h2 {
+    font-size: xx-large;
+    margin-top: 4dvh;
+}
+
+#alogo {
+    font-size: 20px;
+}
+
+#p4 {
+    height: 56vh;
+    width: 100%;
+    margin-top: 2vh;
+    /* background-color: rgba(78, 36, 182, 0.674); */
+    display: flex;
+    justify-content: space-between;
+}
+
+#img10 {
+    position: relative;
+    height: 100%;
+    width: 49.5%;
+    background-image: url(ce-04.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#over10 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 60%;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#over10-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over10-item h2 {
+    margin-top: 2dvh;
+}
+
+#over10-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr10 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#img11 {
+    position: relative;
+    height: 100%;
+    width: 49.5%;
+    background-image: url(f-450.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+#over11 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 60%;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#over11-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over11-item h2 {
+    margin-top: 2dvh;
+}
+
+#over11-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr11 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#p5 {
+    height: 65dvh;
+    width: 100%;
+    margin-top: 2vh;
+    /* background-color: rgba(242, 13, 204, 0.674); */
+}
+
+#img12 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(bmwcafe.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+#over12 {
+    position: absolute;
+    bottom: 0%;
+    height: 15dvh;
+    width: 50%;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#over12-item {
+    width: 95%;
+    justify-self: center;
+}
+
+#over12-item h2 {
+    margin-top: 2dvh;
+}
+
+#over12-item h3 {
+    margin-top: 1dvh;
+}
+
+#bdr12 {
+    margin-top: 4vh;
+    height: 1dvh;
+    background-color: rgb(95, 106, 106);
+}
+
+#bottom {
+    height: fit-content;
+    width: 100%;
+    margin-top: 2vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+}
+
+#bottom button {
+    height: 5vh;
+    width: 10vw;
+    font-size: large;
+    font-weight: 600;
+    background-color: #141517;
+    color: white;
+    margin-top: 5vh;
+}
+
+#bottom button:hover {
+    background-color: #0062FF;
+    border: 2px solid rgb(28, 27, 27);
+    color: white;
+}
+
+#top {
+    height: fit-content;
+    width: 100%;
+    /* background-color: darksalmon; */
+    font-size: x-large;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 9vh;
+    color: white;
+}
+
+#top a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    transition: 1s ease;
+}
+
+#top a:hover {
+    font-weight: 700;
+}
+
+#footer {
+    height: 49vh;
+    width: 100%;
+    margin-top: 7vh;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-footer {
+    height: 100%;
+    width: 49%;
+    /* background-color: dodgerblue; */
+}
+
+
+
+#f-btn {
+    justify-content: center;
+    align-items: center;
+    height: 7dvh;
+    width: 15dvw;
+    display: flex;
+    background-color: #16171A;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 8dvh;
+    margin-left: 1dvw;
+    color: white;
+}
+
+#f-btn:hover {
+    background-color: #0062FF;
+}
+
+#mdhead {
+    margin-left: 1dvw;
+    letter-spacing: 1px;
+}
+
+#iconapp {
+    width: 60%;
+    font-size: large;
+    margin-left: 1dvw;
+    margin-top: 8dvh;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+#iconapp i:hover {
+    font-weight: 800;
+}
+
+#right-footer {
+    margin-top: 8dvh;
+    height: fit-content;
+    width: 49%;
+    /* background-color: darkkhaki; */
+    display: flex;
+    font-size: x-large;
+    justify-content: space-between;
+    line-height: 5dvh;
+}
+
+#right-footer p:hover {
+    font-weight: 700;
+}
+
+#c1 {
+    width: 49%;
+    /* background-color: darkgreen; */
+    color: black;
+}
+
+#c2 {
+    width: 49%;
+    /* background-color: fuchsia; */
+    color: black;
+}
+
+#btmpanel {
+    background-color: #FFFFFF;
+    height: 32dvh;
+    /* background-color: aqua; */
+    color: rgb(48, 46, 46);
+}
+
+#btmpanel h2 {
+    padding-top: 10dvh;
+    font-family: cursive;
+    font-size: 65px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#btmp {
+    text-align: center;
+    font-size: xx-large;
+    font-family: fantasy;
+    font-weight: 100;
+}
