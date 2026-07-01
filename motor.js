@@ -1,3 +1,5 @@
+
+
 // MENU BAR EFFECT
 let menu = document.querySelector("#menu");
 let nav = document.querySelector("#nav-bar");

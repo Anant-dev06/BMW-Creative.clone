@@ -18,6 +18,10 @@ body {
     position: absolute;
 }
 
+#main {
+    width: 100%;
+}
+
 
 #nav-bar {
     height: 12vh;
