@@ -24,11 +24,15 @@ document.querySelector("a").addEventListener("click", (e) => {
     lenis.scrollTo("#section2");
 });
 
+
+// Animation for navbar
 gsap.from(".navbar", {
     y: -100,
     delay: 1,
     duration: 1,
-    opacity: 0
+    opacity: 0,
+    trigger: ".navbar",
+    stagger: 0.5
 })
 
 gsap.from(".navbar a", {
@@ -36,5 +40,9 @@ gsap.from(".navbar a", {
     delay: 1.8,
     duration: 1,
     opacity: 0,
-    stagger: 0.5
+    stagger: 0.5,
+    trigger: ".navbar a"
 })
+
+
+
