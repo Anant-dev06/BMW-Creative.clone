@@ -25,6 +25,42 @@ document.querySelector("a").addEventListener("click", (e) => {
 });
 
 
+const video = document.querySelector("#loader-video");
+video.playbackRate = 2;
+
+if (!sessionStorage.getItem("loaderShown")) {
+
+    sessionStorage.setItem("loaderShown", "true");
+
+    window.addEventListener("load", () => {
+
+        setTimeout(() => {
+
+            gsap.to("#loader", {
+                opacity: 0,
+                duration: 1,
+                onComplete() {
+
+                    document.querySelector("#loader").remove();
+                    document.querySelector("#main").style.opacity = "1";
+                    document.body.style.overflow = "auto";
+
+                }
+            });
+
+        }, 2500);
+
+    });
+
+} else {
+
+    document.querySelector("#loader").remove();
+    document.querySelector("#main").style.opacity = "1";
+    document.body.style.overflow = "auto";
+
+}
+
+
 // Animation for navbar
 gsap.from(".navbar", {
     y: -100,

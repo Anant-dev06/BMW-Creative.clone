@@ -1,20 +1,6 @@
 
 
-// MENU BAR EFFECT
-let menu = document.querySelector("#menu");
-let nav = document.querySelector("#nav-bar");
-let content = document.querySelector("#nav-content");
-let hero = document.querySelector("#hero");
-let hrct = document.querySelector("#hero-content");
-let rnav = document.querySelector("#right-nav");
-let src = document.querySelector("#srd");
-let pin = document.querySelector("#pin");
-let sbox = document.querySelector("#sbox");
-let sinp = document.querySelector("#sinp");
-menu.addEventListener("click", function () {
-    menu.classList.toggle()
 
-});
 
 
 
@@ -44,6 +30,47 @@ imgs.forEach((img) => {
         border.style.marginTop = "2dvh";
 
     });
+
+});
+
+
+let menu = document.querySelector("#menu");
+let menuPage = document.querySelector("#menu-page");
+
+let open = false;
+
+menu.addEventListener("click", () => {
+    console.log("clicked");
+
+    if (!open) {
+
+        menu.classList.replace("ri-menu-line", "ri-close-line");
+
+        gsap.to("#menu-page", {
+
+            left: "0%",
+            duration: 0.8,
+            ease: "ease"
+
+        });
+
+        open = true;
+
+    } else {
+
+        menu.classList.replace("ri-close-line", "ri-menu-line");
+
+        gsap.to("#menu-page", {
+
+            left: "-60%",
+            duration: 0.8,
+            ease: "ease"
+
+        });
+
+        open = false;
+
+    }
 
 });
 

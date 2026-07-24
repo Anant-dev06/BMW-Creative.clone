@@ -18,6 +18,8 @@ body {
     position: absolute;
 }
 
+
+
 #main {
     width: 100%;
 }
@@ -90,6 +92,50 @@ body {
 }
 
 #left-nav i:hover {
+    color: cornflowerblue;
+}
+
+#menu {
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+}
+
+#menu-page {
+
+    position: fixed;
+
+    top: 12%;
+    left: -60%;
+
+    width: 55%;
+    height: 10vh;
+
+    background: #f0f8ffb5;
+    backdrop-filter: blur("20px");
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+
+    transition: .8s;
+
+    z-index: 1000;
+}
+
+#menu-page a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+#menu-page a:hover {
     color: cornflowerblue;
 }
 
