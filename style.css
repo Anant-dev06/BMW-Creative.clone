@@ -754,6 +754,15 @@ body::-webkit-scrollbar {
     }
 }
 
+#bk-box1 {
+    height: 100dvh;
+    width: 100%;
+    background-image: url("bk-box1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #page-two {
     border-radius: 50px;
     height: 100%;
@@ -793,6 +802,7 @@ body::-webkit-scrollbar {
 #video-para {
     height: 100%;
     width: 50%;
+    color: white;
     /* background-color: coral; */
 }
 
