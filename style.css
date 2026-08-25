@@ -293,7 +293,7 @@ body::-webkit-scrollbar {
 }
 
 #M-word {
-    color: rgb(255, 255, 255);
+    color: rgb(9, 107, 110);
     font-weight: 600;
 }
 
@@ -870,7 +870,7 @@ body::-webkit-scrollbar {
     height: 51dvh;
     width: 27dvw;
     /* background-color: darkviolet; */
-    background-image: url("fr-image11.jpg");
+    background-image: url("image2.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -884,7 +884,7 @@ body::-webkit-scrollbar {
     height: 98dvh;
     width: 40dvw;
     /* background-color: deeppink; */
-    background-image: url("fr-image8.jpg");
+    background-image: url("image-5.jpg");
     background-position: center;
     background-size: cover;
     border: 2px solid transparent;
@@ -898,7 +898,7 @@ body::-webkit-scrollbar {
     height: 51dvh;
     width: 27dvw;
     /* background-color: rgb(223, 190, 208); */
-    background-image: url("fr-image9");
+    background-image: url("fr-image5.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -911,7 +911,7 @@ body::-webkit-scrollbar {
     height: 45dvh;
     width: 56dvw;
     /* background-color: rgb(144, 200, 34); */
-    background-image: url("fr-image10.jpg");
+    background-image: url("fr-image8.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -1224,7 +1224,7 @@ body::-webkit-scrollbar {
 }
 
 #language {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
@@ -1232,14 +1232,18 @@ body::-webkit-scrollbar {
     color: #cbc2c2
 }
 
+#language {
+    font-size: x-large;
+}
+
 #language h3:hover {
     color: white;
 }
 
 #column {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
-    margin-left: 10%;
+    justify-self: center;
     height: fit-content;
     width: fit-content;
     gap: 100px;
@@ -1250,15 +1254,17 @@ body::-webkit-scrollbar {
     width: 25%;
 }
 
-#column1 h2 {
+.co-h {
     text-decoration: underline;
-    font-size: large;
+    font-size: xx-large;
     color: white;
+    margin-bottom: 10px;
 }
 
-#column1 a {
+.co-a {
     display: block;
     font-weight: 600;
+    font-size: x-large;
     padding: 10px;
     color: #cbc2c2
 }
@@ -1268,59 +1274,15 @@ body::-webkit-scrollbar {
     width: 25%;
 }
 
-#column2 h2 {
-    text-decoration: underline;
-    font-size: large;
-    color: white;
-
-}
-
-#column2 a {
-    display: block;
-    font-weight: 600;
-    padding: 10px;
-    color: #cbc2c2
-}
-
 #column3 {
     margin-left: 10px;
     width: 25%;
 }
 
-#column3 h2 {
-    text-decoration: underline;
-    font-size: large;
-    color: white;
-}
-
 #column3 a {
-    display: block;
-    font-weight: 600;
-    padding: 10px;
-    color: #cbc2c2
+    text-decoration: none;
 }
 
-#column4 {
-    margin-left: 10px;
-    width: 25%;
-}
-
-#column4 h2 {
-    text-decoration: underline;
-    font-size: large;
-    color: white;
-}
-
-#column4 i {
-    display: block;
-    font-weight: 600;
-    padding: 10px;
-    color: #cbc2c2;
-}
-
-#column h2 {
-    margin-bottom: 10px;
-}
 
 #column a:hover {
     color: #fff;
@@ -1328,6 +1290,13 @@ body::-webkit-scrollbar {
 
 #column i:hover {
     color: #fff;
+}
+
+#tg-p {
+    font-size: 8dvh;
+    line-height: 65px;
+    color: white;
+    padding-top: 30px;
 }
 
 #last {
