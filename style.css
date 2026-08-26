@@ -109,6 +109,8 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
+
 /* .mnu-view {
     position: relative;
     right: 5%;
@@ -146,6 +148,7 @@ body::-webkit-scrollbar {
         font-family: monospace;
         font-weight: 400;
         overflow-x: hidden;
+        position: relative;
     }
 
     #main {
@@ -194,10 +197,33 @@ body::-webkit-scrollbar {
         display: flex;
     }
 
-    /* #dd-list {
+    #cl-btn {
         display: none;
-        gap: 4px;
-    } */
+    }
+
+    #dd-list {
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        display: block;
+        height: 24dvh;
+        width: 40dvw;
+        padding: 5px;
+        background-color: #f2f4f69a;
+        backdrop-filter: blur(10px);
+        translate: 200%;
+    }
+
+    #dd-list a {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        font-size: large;
+        line-height: 30px;
+        color: black;
+    }
 
     #nav-right {
         display: flex;
@@ -757,11 +783,12 @@ body::-webkit-scrollbar {
 #bk-box1 {
     height: 100dvh;
     width: 100%;
-    background-image: url("bk-box1.jpg");
+    background-image: url("mb-bgfix.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 #page-two {
     border-radius: 50px;
@@ -1104,7 +1131,7 @@ body::-webkit-scrollbar {
         height: 32dvh;
         width: 48dvw;
         /* background-color: rgb(223, 190, 208); */
-        background-image: url("fr-image9");
+        background-image: url("image4.jpg");
         background-size: cover;
         background-position: center;
         border-radius: 10px;
@@ -1117,102 +1144,10 @@ body::-webkit-scrollbar {
         height: 28dvh;
         width: 98dvw;
         /* background-color: rgb(144, 200, 34); */
-        background-image: url("fr-image10.jpg");
+        background-image: url("fr-image6.jpg");
         background-size: cover;
         background-position: center;
         border-radius: 10px;
-    }
-}
-
-#image-gallery {
-    height: 100%;
-    width: 100%;
-    /* background-color: chocolate; */
-    display: flex;
-}
-
-#image1 {
-    height: 100%;
-    width: 25%;
-    background-image: url("image1.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-#image1-over {
-    display: none;
-}
-
-#image2 {
-    height: 100%;
-    width: 25%;
-    background-image: url("image2.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-#image3 {
-    height: 100%;
-    width: 25%;
-    background-image: url("image3.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-#image4 {
-    height: 100%;
-    width: 25%;
-    background-image: url("image4.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-@media (max-width: 600px) {
-    #image-gallery {
-        height: 35dvh;
-        width: 100%;
-        /* background-color: chocolate; */
-        display: flex;
-    }
-
-    #image1 {
-        position: relative;
-        height: 100%;
-        width: 99.5%;
-        background-image: url("image1.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #image1-over {
-        position: absolute;
-        height: 50%;
-        width: 80%;
-        align-self: center;
-        justify-self: center;
-        background-color: #acc6eb;
-    }
-
-    #image2 {
-        display: none;
-    }
-
-    #image3 {
-        display: none;
-        height: 100%;
-        width: 33%;
-        background-image: url("image3.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #image4 {
-        display: none;
-        height: 100%;
-        width: 33%;
-        background-image: url("image4.jpg");
-        background-position: center;
-        background-size: cover;
     }
 }
 
@@ -1241,17 +1176,18 @@ body::-webkit-scrollbar {
 }
 
 #column {
+    position: relative;
     margin-top: 30px;
     display: flex;
     justify-self: center;
     height: fit-content;
-    width: fit-content;
-    gap: 100px;
+    width: 90%;
+    gap: 80px;
 }
 
 #column1 {
     margin-left: 10px;
-    width: 25%;
+    width: 30%;
 }
 
 .co-h {
@@ -1271,15 +1207,10 @@ body::-webkit-scrollbar {
 
 #column2 {
     margin-left: 10px;
-    width: 25%;
+    width: 50%;
 }
 
-#column3 {
-    margin-left: 10px;
-    width: 25%;
-}
-
-#column3 a {
+#column2 a {
     text-decoration: none;
 }
 
@@ -1290,6 +1221,11 @@ body::-webkit-scrollbar {
 
 #column i:hover {
     color: #fff;
+}
+
+#tag-line {
+    position: absolute;
+    right: 0;
 }
 
 #tg-p {
