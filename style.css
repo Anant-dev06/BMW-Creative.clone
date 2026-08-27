@@ -6,10 +6,14 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 html,
 body {
     height: 100%;
-    width: 100%;
+    max-width: 100vw;
     background-color: #262626;
     backdrop-filter: blur(40px);
     font-family: monospace;
@@ -142,13 +146,14 @@ body::-webkit-scrollbar {
     html,
     body {
         height: 100%;
-        width: 100%;
+        /* max-width: 100dvw; */
         background-color: #262626;
         backdrop-filter: blur(40px);
         font-family: monospace;
         font-weight: 400;
         overflow-x: hidden;
-        position: relative;
+        max-width: 100vw;
+        /* position: relative; */
     }
 
     #main {
@@ -157,6 +162,7 @@ body::-webkit-scrollbar {
         position: relative;
         /* padding: 1px; */
         color: white;
+        overflow-x: hidden;
     }
 
     .navbar {
@@ -175,10 +181,9 @@ body::-webkit-scrollbar {
     }
 
     .nav-left {
-        font-size: 20px;
+        font-size: xx-large;
         font-weight: bold;
         color: white;
-        left: -5px;
     }
 
     .nav-center {
@@ -195,6 +200,9 @@ body::-webkit-scrollbar {
 
     #mnu {
         display: flex;
+        position: relative;
+        right: -2%;
+        font-size: x-large;
     }
 
     #cl-btn {
@@ -204,14 +212,15 @@ body::-webkit-scrollbar {
     #dd-list {
         position: absolute;
         top: 100%;
-        right: 0%;
+        right: 0;
         display: block;
         height: 24dvh;
         width: 40dvw;
         padding: 5px;
         background-color: #f2f4f69a;
         backdrop-filter: blur(10px);
-        translate: 200%;
+        /* translate: 200%; */
+
     }
 
     #dd-list a {
@@ -972,6 +981,7 @@ body::-webkit-scrollbar {
         justify-self: center;
         font-weight: 300;
         margin-top: 6vh;
+        border-bottom: 4px solid rgb(48, 46, 46);
     }
 
     #Third-view {
@@ -1251,106 +1261,82 @@ body::-webkit-scrollbar {
     }
 
     #language {
-        width: 30%;
+        width: 90%;
         display: flex;
-        justify-content: space-between;
-        margin-left: 10px;
+        flex-wrap: nowrap;
         padding-top: 2px;
-        gap: 10px;
-        color: #cbc2c2
+        color: #cbc2c2;
+        font-size: x-small;
+    }
+
+    #chn {
+        writing-mode: horizontal-tb;
+        white-space: nowrap;
     }
 
     #column {
         margin-top: 20px;
         display: flex;
-        flex-wrap: wrap;
-        margin-left: 8%;
+        justify-self: center;
+        flex-wrap: nowrap;
         height: fit-content;
-        width: fit-content;
-        gap: 100px;
+        width: 90dvw;
     }
 
     #column1 {
-        margin-left: 10px;
-        width: 25%;
+        width: 40%;
     }
 
     #column1 h2 {
         text-decoration: underline;
-        font-size: large;
+        font-size: medium;
         color: white;
     }
 
     #column1 a {
-        display: block;
+        display: flex;
         font-weight: 600;
         padding: 10px;
-        color: #cbc2c2
+        color: #cbc2c2;
+        font-size: small;
     }
 
     #column2 {
-        margin-left: 10px;
-        width: 25%;
+        width: 40%;
     }
 
     #column2 h2 {
         text-decoration: underline;
-        font-size: large;
-        color: white;
-
-    }
-
-    #column3 {
-        margin-left: 10px;
-        width: 25%;
-    }
-
-    #column3 h2 {
-        text-decoration: underline;
-        font-size: large;
+        font-size: medium;
         color: white;
     }
 
-    #column3 a {
-        display: block;
-        font-weight: 600;
-        padding: 10px;
-        color: #cbc2c2
-    }
-
-    #column4 {
-        margin-left: 10px;
-        width: 25%;
-    }
-
-    #column4 h2 {
-        text-decoration: underline;
-        font-size: large;
-        color: white;
-    }
-
-    #column4 i {
+    #column2 a {
         display: block;
         font-weight: 600;
         padding: 10px;
         color: #cbc2c2;
+        font-size: small;
     }
 
     #column h2 {
         margin-bottom: 10px;
     }
 
-    #column a:hover {
-        color: #fff;
+    #tag-line {
+        display: none;
     }
 
-    #column i:hover {
-        color: #fff;
+    #tg-p {
+        font-size: medium;
+        line-height: 50px;
+        color: white;
+        padding-top: 30px;
     }
 
     #last {
         text-align: center;
-        font-size: xx-large;
+        font-size: small;
         margin: 30px;
         color: white;
     }

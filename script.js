@@ -74,25 +74,52 @@ gsap.from(".navbar", {
 
 // Menu bar animaton
 
+// let opbtn = document.querySelector("#op-btn");
+// let menu = document.querySelector("#dd-list");
+// let clbtn = document.querySelector("#cl-btn");
+// opbtn.addEventListener("click", () => {
+
+//     gsap.set(menu, {
+//         x: 250
+//     });
+
+//     opbtn.style.display = "none";
+//     clbtn.style.display = "block";
+//     gsap.to(menu, {
+//         x: 0,
+//         duration: 0.8
+//     });
+// })
+// clbtn.addEventListener("click", () => {
+//     opbtn.style.display = "block";
+//     clbtn.style.display = "";
+//     gsap.to(menu, {
+//         x: 150,
+//         duration: 0.8
+//     });
+// })
+
 let opbtn = document.querySelector("#op-btn");
 let menu = document.querySelector("#dd-list");
 let clbtn = document.querySelector("#cl-btn");
+
+gsap.set(menu, { x: 250 });
+// clbtn.style.display = "none"; 
+
 opbtn.addEventListener("click", () => {
     opbtn.style.display = "none";
     clbtn.style.display = "block";
     gsap.to(menu, {
         x: 0,
-        duration: 0.8,
-        opacity: 1
+        duration: 0.8
     });
 })
 clbtn.addEventListener("click", () => {
     opbtn.style.display = "block";
-    clbtn.style.display = "none";
+    clbtn.style.display = "";
     gsap.to(menu, {
-        x: 150,
-        duration: 0.8,
-        opacity: 0
+        x: 200,
+        duration: 0.8
     });
 })
 
