@@ -385,7 +385,7 @@ body::-webkit-scrollbar {
 }
 
 #left-bull h1 {
-    font-size: 80px;
+    font-size: 70px;
     color: white;
     margin-left: 2vw;
 }
@@ -399,7 +399,7 @@ body::-webkit-scrollbar {
     padding: 10px;
     color: white;
     margin-top: 5vh;
-    margin-left: 6vw;
+    margin-left: 10vw;
 }
 
 .btneft:hover {
@@ -444,7 +444,7 @@ body::-webkit-scrollbar {
 }
 
 #right-puma h1 {
-    font-size: 80px;
+    font-size: 70px;
     color: white;
     margin-left: 2vw;
 }
@@ -575,10 +575,11 @@ body::-webkit-scrollbar {
         font-weight: 300;
         margin-top: 3vh;
         border-bottom: 4px solid rgb(48, 46, 46);
+        margin-bottom: 20px;
     }
 
     #bmw-redbull {
-        height: 35vh;
+        height: 110dvh;
         width: 100%;
         margin-top: -3px;
         display: flex;
@@ -601,60 +602,90 @@ body::-webkit-scrollbar {
 
 
     #right-bull {
+        height: 30dvh;
         background-image: url(bmw-bull.jpg);
         background-position: center;
         background-size: cover;
-        height: 75%;
+        height: 30dvh;
         width: 100%;
-        position: relative;
+        /* position: relative; */
     }
 
     #rightbull-over {
-
-        position: absolute;
-        bottom: 0;
-        height: 8dvh;
+        height: 80dvh;
         width: 100dvw;
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
         font-size: large;
-        background-color: rgba(240, 248, 255, 0.281);
+        background-color: rgba(200, 203, 206, 0.281);
         backdrop-filter: blur(10px);
-        align-items: center;
+        /* align-items: center; */
+        text-align: center;
     }
 
     #rightbull-over h1 {
-        margin-top: 5px;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        /* margin-top: 5px; */
         color: #acc6eb;
         border-bottom: 0px solid transparent;
-        font-size: 25px;
+        font-size: xx-large;
     }
 
-    .ovbtn {
-        color: #202121;
-        border: 3px solid rgb(58, 58, 72);
-        background-color: transparent;
-        height: 3dvh;
-        width: 40dvw;
-        font-size: medium;
+    #rightbull-over p {
+        font-size: large;
         font-weight: 600;
-        margin-left: 29dvw;
-        margin-top: 4px;
-        border-radius: 10px;
+        color: white;
+    }
+
+    #bull-table {
+        font-size: small;
+    }
+
+    #bull-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #bull-table th,
+    #bull-table td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    #bull-table th {
+        color: white;
+        font-weight: 600;
+        font-size: medium;
+    }
+
+    #bull-table td {
+        color: rgb(203, 199, 199);
+        font-weight: 500;
+        font-size: small;
+    }
+
+    .right-ul {
+        width: 95%;
+        font-size: small;
+        line-height: 30px;
     }
 
     #bmw-puma {
-        height: fit-content;
+        height: 110dvh;
         width: 100%;
-        margin-top: 2px;
+        margin-top: 5dvh;
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
+        align-items: center;
     }
 
     #left-puma {
-        position: relative;
         width: 100%;
-        height: 35dvh;
+        height: 30dvh;
         /* background-color: deeppink; */
         background-image: url("bmw-puma.jpg");
         background-size: cover;
@@ -662,9 +693,7 @@ body::-webkit-scrollbar {
     }
 
     #leftpuma-over {
-        position: absolute;
-        bottom: 0;
-        height: 8dvh;
+        height: 80dvh;
         width: 100dvw;
         display: block;
         font-size: large;
