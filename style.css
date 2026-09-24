@@ -457,7 +457,7 @@ body::-webkit-scrollbar {
     margin-left: 2vw;
 }
 
-.btnft {
+.btneft {
     width: 25vw;
     height: 7vh;
     font-size: medium;
@@ -466,10 +466,10 @@ body::-webkit-scrollbar {
     padding: 10px;
     color: white;
     margin-top: 5vh;
-    margin-left: 12vw;
+    margin-left: 13vw;
 }
 
-.btnft:hover {
+.btneft:hover {
     border: 3px solid white;
     visibility: visible;
     backdrop-filter: blur(10px);
@@ -823,13 +823,13 @@ body::-webkit-scrollbar {
 }
 
 
-#page-two {
+#Innovation {
     border-radius: 50px;
     height: 100%;
     width: auto;
 }
 
-.pg2head {
+.pghead {
     font-size: 60px;
     color: white;
     justify-self: center;
@@ -1200,6 +1200,155 @@ body::-webkit-scrollbar {
     }
 }
 
+#right-moto {
+    background-image: url(motosport-1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 49%;
+}
+
+#left-moto {
+    width: 49%;
+    margin-top: 9vh;
+}
+
+#left-moto h1 {
+    font-size: 70px;
+    color: white;
+    margin-left: 5vw;
+}
+
+#bmw-moto2 {
+    height: 50vh;
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-moto2 {
+    width: 49%;
+    /* background-color: deeppink; */
+    background-image: url("motosport-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#leftmoto2-over {
+    display: none;
+}
+
+#right-moto2 {
+    width: 49%;
+}
+
+#right-moto2 h1 {
+    font-size: 70px;
+    color: white;
+    margin-left: 15vw;
+    margin-top: 10dvh;
+}
+
+.btneft-moto {
+    width: 25vw;
+    height: 7vh;
+    font-size: medium;
+    border: 3px solid rgb(138, 134, 134);
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+
+.btneft-moto:hover {
+    border: 3px solid white;
+    visibility: visible;
+    backdrop-filter: blur(10px);
+}
+
+
+
+/* MOTORRAD */
+
+#motor-view {
+    height: 55dvh;
+    width: 100%;
+    /* background-color: #1c69d4; */
+    display: flex;
+    margin-top: 5dvh;
+}
+
+#motor-video {
+    height: 100%;
+    width: 50%;
+    margin-bottom: 10px;
+    background-image: url("motorrad-1.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background-color: burlywood; */
+}
+
+#motor-over {
+    display: none;
+}
+
+#motor-para {
+    height: 100%;
+    width: 50%;
+    color: white;
+    /* background-color: coral; */
+}
+
+#motor-para h2 {
+    font-size: 40px;
+    margin-top: 18%;
+    margin-left: 20%;
+}
+
+#motor-para h3 {
+    margin-top: 4dvh;
+    font-size: 30px;
+    margin-left: 20%;
+}
+
+#motor2-view {
+    height: 50vh;
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#motor2-left {
+    height: 100%;
+    width: 49%;
+    background-image: url("motorrad-2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#motor2-over {
+    display: none;
+}
+
+#motor2-right {
+    height: 100%;
+    width: 50%;
+}
+
+#motor2-right h2 {
+    font-size: 50px;
+    color: white;
+    margin-left: 2vw;
+    text-align: center;
+    margin-top: 12dvh;
+}
+
+
+
+/* FOOTER */
+
 #footer {
     height: fit-content;
     width: 100%;
@@ -1534,7 +1683,7 @@ body::-webkit-scrollbar {
 
     background: #222;
 
-    border-left: 4px solid purple;
+    border-left: 4px solid rgb(52, 51, 52);
 
     border-radius: 6px;
 
