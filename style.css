@@ -1200,6 +1200,15 @@ body::-webkit-scrollbar {
     }
 }
 
+#bk-box2 {
+    height: 100dvh;
+    width: 100%;
+    background-image: url("bg-fix-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #right-moto {
     background-image: url(motosport-1.jpg);
     background-position: center;
@@ -1271,6 +1280,15 @@ body::-webkit-scrollbar {
 
 /* MOTORRAD */
 
+#bk-box3 {
+    height: 100dvh;
+    width: 100%;
+    background-image: url("bg-fix-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #motor-view {
     height: 55dvh;
     width: 100%;
@@ -1326,6 +1344,7 @@ body::-webkit-scrollbar {
     background-image: url("motorrad-2.jpg");
     background-position: center;
     background-size: cover;
+    padding: 20px;
 }
 
 #motor2-over {
