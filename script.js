@@ -184,22 +184,73 @@ const btn = {
 
     },
 
-    // b5: {
+    b5: {
 
-    //     title: "Card-5",
+        title: "Card-5",
 
-    //     image:
-    //         "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
+        image:
+            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
 
-    //     discription:
-    //         "This is a Fourth Card Of list.",
+        discription:
+            "This is a Fourth Card Of list.",
 
-    //     specs: [
-    //         ["User-7", "Kumo"],
-    //         ["User-8", "Lago"]
-    //     ]
+        specs: [
+            ["User-7", "Kumo"],
+            ["User-8", "Lago"]
+        ]
 
-    // }
+    },
+
+    b6: {
+
+        title: "Card-6",
+
+        image:
+            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
+
+        discription:
+            "This is a Fourth Card Of list.",
+
+        specs: [
+            ["User-7", "Kumo"],
+            ["User-8", "Lago"]
+        ]
+
+    },
+
+    b7: {
+
+        title: "Card-7",
+
+        image:
+            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
+
+        discription:
+            "This is a Fourth Card Of list.",
+
+        specs: [
+            ["User-7", "Kumo"],
+            ["User-8", "Lago"]
+        ]
+
+    },
+
+    b8: {
+
+        title: "Card-8",
+
+        image:
+            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
+
+        discription:
+            "This is a Fourth Card Of list.",
+
+        specs: [
+            ["User-7", "Kumo"],
+            ["User-8", "Lago"]
+        ]
+
+    }
 
 };
 

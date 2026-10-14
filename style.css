@@ -7,7 +7,7 @@
 }
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 html,
@@ -363,6 +363,78 @@ body::-webkit-scrollbar {
     }
 }
 
+#why {
+    width: 100%;
+    height: 60dvh;
+    overflow: hidden;
+    position: relative;
+}
+
+#why-scroll {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    width: max-content;
+    height: 100%;
+    animation: whyMove 25s linear infinite;
+}
+
+.why-img {
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Different sizes and vertical positions */
+.why-img-i {
+    width: 38vw;
+    height: 40vh;
+    align-self: flex-start;
+    margin-top: 15vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-2 {
+    width: 35vw;
+    height: 45vh;
+    align-self: center;
+}
+
+.img-3 {
+    width: 20vw;
+    height: 28vh;
+    align-self: flex-end;
+    margin-bottom: 4vh;
+}
+
+.img-4 {
+    width: 30vw;
+    height: 40vh;
+    align-self: center;
+}
+
+.img-5 {
+    width: 30vw;
+    height: 40vh;
+    align-self: center;
+}
+
+@keyframes whyMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.why-img-i:hover {
+    transform: scale(1.05);
+    transition: ease 0.8s;
+}
+
 #collaboration h1 {
     font-size: 60px;
     color: white;
@@ -413,7 +485,7 @@ body::-webkit-scrollbar {
 }
 
 #right-bull {
-    background-image: url(bmw-bull.jpg);
+    background-image: url(collab-img-1.jpg);
     background-position: center;
     background-size: cover;
     width: 49%;
@@ -438,7 +510,7 @@ body::-webkit-scrollbar {
 #left-puma {
     width: 49%;
     /* background-color: deeppink; */
-    background-image: url("bmw-puma.jpg");
+    background-image: url("collab-img-2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -1583,10 +1655,10 @@ body::-webkit-scrollbar {
 #overlay-box {
     position: relative;
 
-    width: 90vw;
-    height: 90vh;
+    width: 95vw;
+    height: 95vh;
 
-    padding: 40px;
+    padding: 30px;
 
     overflow-y: auto;
 
@@ -1633,8 +1705,8 @@ body::-webkit-scrollbar {
 
 #title {
     position: absolute;
-    left: 15%;
-    top: 50%;
+    left: 45%;
+    top: 20%;
     margin-bottom: 25px;
 
     text-align: center;
@@ -1649,9 +1721,10 @@ body::-webkit-scrollbar {
 
 #image {
     position: absolute;
-    left: 2%;
-    width: 500px;
-    height: 300px;
+    left: 28%;
+    top: 2%;
+    width: 45dvw;
+    height: 50dvh;
 
     margin: 0 auto 10px;
 
@@ -1690,7 +1763,7 @@ body::-webkit-scrollbar {
     right: 5%;
     top: 10%;
     width: 50%;
-    display: flex;
+    display: none;
     flex-direction: column;
 
     gap: 12px;
