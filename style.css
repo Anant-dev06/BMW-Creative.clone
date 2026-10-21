@@ -53,7 +53,6 @@ body::-webkit-scrollbar {
 
 #main {
     width: 100%;
-    /* background-color: beige; */
     position: relative;
     padding: 0px;
     color: white;
@@ -65,6 +64,7 @@ body::-webkit-scrollbar {
     height: 100%;
     width: 100%;
     position: relative;
+    cursor: default;
 }
 
 #content {
@@ -123,7 +123,6 @@ body::-webkit-scrollbar {
 #nav-bar {
     height: 5dvh;
     width: 42dvw;
-    /* background-color: #cbc2c2; */
     position: absolute;
     top: 2%;
     right: 2%;
@@ -279,7 +278,6 @@ body::-webkit-scrollbar {
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid #fbf5f500;
-    /* border-bottom: 2px solid black; */
 }
 
 #alphabet h6:hover {
@@ -360,7 +358,7 @@ body::-webkit-scrollbar {
     width: 38vw;
     height: 40vh;
     align-self: flex-start;
-    margin-top: 15vh;
+    margin-top: 10dvh;
     object-fit: cover;
     object-position: center;
 }
@@ -405,1508 +403,166 @@ body::-webkit-scrollbar {
     transition: ease 0.8s;
 }
 
-#collaboration h1 {
-    font-size: 60px;
-    color: white;
-    justify-self: center;
-    font-weight: 300;
-    margin-top: 6vh;
-}
-
-.over-table {
-    display: none;
-}
-
-#bmw-redbull {
-    height: 50vh;
+#panel {
+    height: 8dvh;
     width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    justify-content: space-between;
+    border-top: 2px solid slategray;
+    border-bottom: 2px solid slategray;
 }
 
-#left-bull {
-    width: 49%;
-    margin-top: 9vh;
-}
-
-#left-bull h1 {
-    font-size: 70px;
-    color: white;
-    margin-left: 2vw;
-}
-
-.btneft {
-    width: 25vw;
-    height: 7vh;
-    font-size: medium;
-    border: 3px solid rgb(138, 134, 134);
-    background-color: transparent;
-    padding: 10px;
-    color: white;
-    margin-top: 5vh;
-    margin-left: 10vw;
-}
-
-.btneft:hover {
-    border: 3px solid white;
-    visibility: visible;
-    backdrop-filter: blur(10px);
-}
-
-#right-bull {
-    background-image: url(collab-img-1.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 49%;
-}
-
-.img-below {
-    display: none;
-}
-
-#rightbull-over {
-    display: none;
-}
-
-#bmw-puma {
-    height: 50vh;
-    width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-#left-puma {
-    width: 49%;
-    /* background-color: deeppink; */
-    background-image: url("collab-img-2.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-#leftpuma-over {
-    display: none;
-}
-
-#right-puma {
-    width: 49%;
-}
-
-#right-puma h1 {
-    font-size: 70px;
-    color: white;
-    margin-left: 2vw;
-}
-
-.btneft {
-    width: 25vw;
-    height: 7vh;
-    font-size: medium;
-    border: 3px solid rgb(138, 134, 134);
-    background-color: transparent;
-    padding: 10px;
-    color: white;
-    margin-top: 5vh;
-    margin-left: 13vw;
-}
-
-.btneft:hover {
-    border: 3px solid white;
-    visibility: visible;
-    backdrop-filter: blur(10px);
-}
-
-#frame {
-    position: relative;
-    display: flex;
-    height: 100dvh;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    /* background-image: url("frame-image.jpg"); */
-    background-position: center;
-    background-size: cover;
-}
-
-#bdy {
+#panel-item {
     height: 100%;
-    width: 90%;
-    justify-self: center;
-    background-color: antiquewhite;
-}
-
-.fr1 {
-    position: absolute;
-    bottom: 1%;
-    right: 1%;
-    height: 51dvh;
-    width: 27dvw;
-    border-radius: 10px;
-}
-
-.fr2 {
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    bottom: 2%;
-    height: 98dvh;
-    width: 40dvw;
-    border-radius: 10px;
-}
-
-.fr3 {
-    position: absolute;
-    bottom: 1%;
-    right: 30%;
-    height: 51dvh;
-    width: 27dvw;
-    border-radius: 10px;
-}
-
-.fr4 {
-    position: absolute;
-    top: 1%;
-    right: 1%;
-    height: 45dvh;
-    width: 56dvw;
-    border-radius: 10px;
-}
-
-#fr1 {
-    position: absolute;
-    bottom: 1%;
-    right: 1%;
-    height: 51dvh;
-    width: 27dvw;
-    background-image: url("collab-4.jpg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#fr2 {
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    bottom: 2%;
-    height: 98dvh;
-    width: 40dvw;
-    /* background-color: deeppink; */
-    background-image: url("collab-1.jpg");
-    background-position: center;
-    background-size: cover;
-    border: 2px solid transparent;
-    border-radius: 10px;
-}
-
-#fr3 {
-    position: absolute;
-    bottom: 1%;
-    right: 30%;
-    height: 51dvh;
-    width: 27dvw;
-    /* background-color: rgb(223, 190, 208); */
-    background-image: url("collab-3.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-}
-
-#fr4 {
-    position: absolute;
-    top: 1%;
-    right: 1%;
-    height: 45dvh;
-    width: 56dvw;
-    /* background-color: rgb(144, 200, 34); */
-    background-image: url("collab-2.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-}
-
-.fr {
-
-    transition: 0.4s ease;
-
-}
-
-.fr:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 10px 30px rgba(24, 24, 24, 0.4);
-
-}
-
-#more {
-    height: fit-content;
-    width: 100%;
-    background-color: #201e1e;
-    text-align: center;
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-@media (max-width:600px) {
-    #collaboration {
-        height: fit-content;
-    }
-
-    #collaboration h1 {
-        font-size: 30px;
-        color: white;
-        justify-self: center;
-        font-weight: 300;
-        margin-top: 3vh;
-        margin-bottom: 20px;
-    }
-
-    #bmw-redbull {
-        display: flex;
-        flex-wrap: wrap;
-        height: 12dvh;
-        width: 100%;
-        margin-top: -3px;
-    }
-
-    #left-bull {
-        display: none;
-    }
-
-
-    #right-bull {
-        height: 30dvh;
-        background-image: url(bmw-bull.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 30dvh;
-        width: 100%;
-    }
-
-    .img-below {
-        display: block;
-        height: 20dvh;
-        width: 100%;
-        background-color: #5a9af5;
-    }
-
-    .img-below h1 {
-        font-size: large;
-    }
-
-    .img-below button {
-        height: 7dvh;
-        width: 55dvw;
-        margin: 1px;
-        transform: translateX(40%);
-    }
-
-    .over-table {
-        display: none;
-        /* height: 80dvh;
-        width: 100dvw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-self: center;
-        font-size: large;
-        background-color: rgba(200, 203, 206, 0.281);
-        backdrop-filter: blur(10px);
-        text-align: center; */
-    }
-
-    .over-table h1 {
-        width: 100%;
-        height: fit-content;
-        text-align: center;
-        margin-top: 5px;
-        color: #acc6eb;
-        border-bottom: 0px solid transparent;
-        font-size: xx-large;
-    }
-
-    .over-table p {
-        font-size: large;
-        font-weight: 600;
-        color: white;
-    }
-
-    #bull-table {
-        font-size: small;
-    }
-
-    #bull-table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    #bull-table th,
-    #bull-table td {
-        padding: 10px;
-        text-align: left;
-    }
-
-    #bull-table th {
-        color: white;
-        font-weight: 600;
-        font-size: medium;
-    }
-
-    #bull-table td {
-        color: rgb(203, 199, 199);
-        font-weight: 500;
-        font-size: small;
-    }
-
-    .right-ul {
-        width: 95%;
-        font-size: small;
-        line-height: 30px;
-    }
-
-    #bmw-puma {
-        height: 110dvh;
-        width: 100%;
-        /* margin-top: 5dvh; */
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    #left-puma {
-        width: 100%;
-        height: 30dvh;
-        background-image: url("bmw-puma.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #leftpuma-over {
-        height: 80dvh;
-        width: 100dvw;
-        display: block;
-        font-size: large;
-        background-color: rgba(44, 45, 46, 0.281);
-        backdrop-filter: blur(10px);
-    }
-
-    #leftpuma-over h1 {
-        margin-top: 5px;
-        color: #acc6eb;
-        border-bottom: 0px solid transparent;
-        font-size: 25px;
-    }
-
-    #right-puma {
-        display: none;
-    }
-
-
-    #frame {
-        position: relative;
-        display: flex;
-        height: 66dvh;
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        /* background-image: url("frame-image.jpg"); */
-        background-position: center;
-        background-size: cover;
-    }
-
-    /* #bdy {
-        height: 65dvh;
-        width: 90%;
-        justify-self: center;
-        background-color: antiquewhite;
-    } */
-
-
-    #fr1 {
-        /* none */
-        display: none;
-        position: absolute;
-        bottom: 1%;
-        right: 1%;
-        height: 35dvh;
-        width: 48dvw;
-        background-image: url("collab-4.jpg");
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-    }
-
-    #fr2 {
-        position: absolute;
-        top: 46%;
-        right: 1%;
-        bottom: 2%;
-        height: 32dvh;
-        width: 48dvw;
-        /* background-color: deeppink; */
-        background-image: url("collab-1.jpg");
-        background-position: center;
-        background-size: cover;
-        border: 2px solid transparent;
-        border-radius: 10px;
-    }
-
-    #fr3 {
-        position: absolute;
-        top: 46%;
-        bottom: 2%;
-        right: 1%;
-        height: 32dvh;
-        width: 48dvw;
-        /* background-color: rgb(223, 190, 208); */
-        background-image: url("collab-3.jpg");
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-    }
-
-    #fr4 {
-        position: absolute;
-        top: 2%;
-        right: 1%;
-        height: 28dvh;
-        width: 98dvw;
-        /* background-color: rgb(144, 200, 34); */
-        background-image: url("collab-2.jpg");
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-    }
-
-
-    #more {
-        height: fit-content;
-        width: 100%;
-        background-color: #201e1e;
-        text-align: center;
-        margin-top: -4px;
-        margin-bottom: 4px;
-    }
-}
-
-#bk-box1 {
-    height: 100dvh;
-    width: 100%;
-    background-image: url("mb-bgfix.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-#Innovation {
-    border-radius: 50px;
-    height: 100%;
-    width: auto;
-}
-
-.pghead {
-    font-size: 60px;
-    color: white;
-    justify-self: center;
-    font-weight: 300;
-    margin-top: 6vh;
-}
-
-#Third-view {
-    height: 55dvh;
-    width: 100%;
-    /* background-color: #1c69d4; */
-    display: flex;
-    margin-top: 5dvh;
-}
-
-#right-video {
-    height: 100%;
-    width: 50%;
-    margin-bottom: 10px;
-    background-image: url("klasse.jpg");
-    background-position: center;
-    background-size: cover;
-    /* background-color: burlywood; */
-}
-
-#right-over {
-    display: none;
-}
-
-#video-para {
-    height: 100%;
-    width: 50%;
-    color: white;
-    /* background-color: coral; */
-}
-
-#video-para h2 {
-    font-size: 40px;
-    margin-top: 18%;
-    margin-left: 20%;
-}
-
-#video-para h3 {
-    margin-top: 4dvh;
-    font-size: 30px;
-    margin-left: 20%;
-}
-
-#fourth-view {
-    height: 50vh;
-    width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-#fourth-left {
-    height: 100%;
-    width: 49%;
-    background-image: url("m3-elec.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-#fourth-over {
-    display: none;
-}
-
-#fourth-right {
-    height: 100%;
-    width: 50%;
-}
-
-#fourth-right h2 {
-    font-size: 50px;
-    color: white;
-    margin-left: 2vw;
-    text-align: center;
-    margin-top: 12dvh;
-}
-
-#frame2 {
-    position: relative;
-    display: flex;
-    height: 100dvh;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    /* background-image: url("frame-image.jpg"); */
-    background-position: center;
-    background-size: cover;
-}
-
-#fr5 {
-    position: absolute;
-    bottom: 1%;
-    right: 1%;
-    height: 51dvh;
-    width: 27dvw;
-    /* background-color: darkviolet; */
-    background-image: url("image2.jpg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#fr6 {
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    bottom: 2%;
-    height: 98dvh;
-    width: 40dvw;
-    /* background-color: deeppink; */
-    background-image: url("image-5.jpg");
-    background-position: center;
-    background-size: cover;
-    border: 2px solid transparent;
-    border-radius: 10px;
-}
-
-#fr7 {
-    position: absolute;
-    bottom: 1%;
-    right: 30%;
-    height: 51dvh;
-    width: 27dvw;
-    /* background-color: rgb(223, 190, 208); */
-    background-image: url("fr-image5.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-}
-
-#fr8 {
-    position: absolute;
-    top: 1%;
-    right: 1%;
-    height: 45dvh;
-    width: 56dvw;
-    /* background-color: rgb(144, 200, 34); */
-    background-image: url("fr-image8.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-}
-
-.fr1:hover,
-.fr2:hover,
-.fr3:hover,
-.fr4:hover,
-.fr5:hover,
-.fr6:hover,
-.fr7:hover,
-.fr8:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 10px 30px rgba(24, 24, 24, 0.4);
-
-    transition: 0.4s ease;
-}
-
-/* {
-
-transition: 0.4s ease;
-
-}
-
-.fr:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 10px 30px rgba(24, 24, 24, 0.4);
-
-} */
-
-@media (max-width: 600px) {
-    #page-two {
-        border-radius: 50px;
-        height: fit-content;
-        width: auto;
-    }
-
-    .pg2head {
-        font-size: 35px;
-        color: white;
-        justify-self: center;
-        font-weight: 300;
-        margin-top: 6vh;
-        border-bottom: 4px solid rgb(74, 72, 72);
-    }
-
-    #Third-view {
-        /* height: 120dvh;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 5dvh; */
-        height: 110dvh;
-        width: 100%;
-        margin-top: 5dvh;
-        margin-bottom: 5dvh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    #right-video {
-        width: 100%;
-        height: 30dvh;
-        top: 2%;
-        margin-bottom: 1px;
-        background-image: url("klasse.jpg");
-        background-position: center;
-        background-size: cover;
-        /* background-color: burlywood; */
-    }
-
-    #video-para {
-        display: none;
-    }
-
-    #right-over {
-        /* try */
-        display: none;
-        /* position: absolute;
-        bottom: 0;
-        height: 8dvh;
-        width: 100dvw;
-        display: block;
-        font-size: large;
-        background-color: rgba(44, 45, 46, 0.281);
-        backdrop-filter: blur(10px);
-        align-items: center; */
-    }
-
-    #right-over h2 {
-        text-align: center;
-        font-size: 25px;
-        margin-top: 1%;
-        /* margin-left: 8%; */
-    }
-
-    .visionbtn {
-        display: none;
-        color: #5a9af5;
-        border: 3px solid rgb(89, 89, 114);
-        border-radius: 10px;
-        background-color: transparent;
-        height: 3dvh;
-        width: 40dvw;
-        font-size: medium;
-        font-weight: 600;
-        margin-left: 30dvw;
-        margin-top: 2%;
-    }
-
-    #fourth-view {
-        height: 110dvh;
-        width: 100%;
-        margin-top: 5dvh;
-        margin-bottom: 10dvh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    #fourth-left {
-        /* top: -15%;
-        height: 100%;
-        width: 100%;
-        background-image: url("m3-elec.jpg");
-        background-position: center;
-        background-size: cover; */
-        width: 100%;
-        height: 30dvh;
-        top: 2%;
-        margin-bottom: 1px;
-    }
-
-    #fourth-over {
-        position: absolute;
-        bottom: 0;
-        height: 10dvh;
-        width: 100dvw;
-        display: block;
-        font-size: large;
-        background-color: rgba(44, 45, 46, 0.281);
-        backdrop-filter: blur(10px);
-        align-items: center;
-    }
-
-    #fourth-over h2 {
-        font-size: 28px;
-        margin-top: 2%;
-        text-align: center;
-    }
-
-    .fourthbtn {
-        display: none;
-        color: #3d4a5b;
-        border: 3px solid rgb(20, 20, 35);
-        border-radius: 10px;
-        background-color: transparent;
-        height: 3dvh;
-        width: 40dvw;
-        font-size: medium;
-        font-weight: 600;
-        margin-left: 30dvw;
-        margin-top: 2%;
-    }
-
-    #fourth-right {
-        display: none;
-    }
-
-    #frame2 {
-        position: relative;
-        display: flex;
-        height: 66dvh;
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        /* background-image: url("frame-image.jpg"); */
-        background-position: center;
-        background-size: cover;
-    }
-
-    #fr5 {
-        position: absolute;
-        top: 48%;
-        right: 1%;
-        height: 32dvh;
-        width: 48dvw;
-        /* background-color: darkviolet; */
-        background-image: url("fr-image11.jpg");
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-    }
-
-    #fr6 {
-        display: none;
-        position: absolute;
-        top: 1%;
-        left: 1%;
-        bottom: 2%;
-        height: 28dvh;
-        width: 98dvw;
-        /* background-color: deeppink; */
-        background-image: url("fr-image8.jpg");
-        background-position: center;
-        background-size: cover;
-        border: 2px solid transparent;
-        border-radius: 10px;
-    }
-
-    #fr7 {
-        position: absolute;
-        top: 48%;
-        left: 2%;
-        height: 32dvh;
-        width: 48dvw;
-        /* background-color: rgb(223, 190, 208); */
-        background-image: url("image4.jpg");
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-    }
-
-    #fr8 {
-        position: absolute;
-        top: 4%;
-        right: 1%;
-        height: 28dvh;
-        width: 98dvw;
-        /* background-color: rgb(144, 200, 34); */
-        background-image: url("fr-image6.jpg");
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-    }
-}
-
-
-/* Motosport */
-
-#bk-box2 {
-    height: 100dvh;
-    width: 100%;
-    background-image: url("bg-fix-2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#right-moto {
-    background-image: url(motosport-1.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 49%;
-}
-
-#left-moto {
-    width: 49%;
-    margin-top: 9vh;
-}
-
-#left-moto h1 {
-    font-size: 70px;
-    color: white;
-    margin-left: 5vw;
-}
-
-#bmw-moto2 {
-    height: 50vh;
-    width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-#left-moto2 {
-    width: 49%;
-    /* background-color: deeppink; */
-    background-image: url("motosport-2.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-#leftmoto2-over {
-    display: none;
-}
-
-#right-moto2 {
-    width: 49%;
-}
-
-#right-moto2 h1 {
-    font-size: 70px;
-    color: white;
-    margin-left: 15vw;
-    margin-top: 10dvh;
-}
-
-.btneft-moto {
-    width: 25vw;
-    height: 7vh;
-    font-size: medium;
-    border: 3px solid rgb(138, 134, 134);
-    background-color: transparent;
-    padding: 10px;
-    color: white;
-    margin-top: 5vh;
-    margin-left: 15vw;
-}
-
-.btneft-moto:hover {
-    border: 3px solid white;
-    visibility: visible;
-    backdrop-filter: blur(10px);
-}
-
-#fr9 {
-    background-image: url(resources/fr10-img.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#fr10 {
-    background-image: url(resources/fr9-img.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#fr11 {
-    background-image: url(resources/fr11-img.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#fr12 {
-    background-image: url(resources/fr12-img.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-
-
-/* MOTORRAD */
-
-#bk-box3 {
-    height: 100dvh;
-    width: 100%;
-    background-image: url("bg-fix-3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#motor-view {
-    height: 55dvh;
-    width: 100%;
-    /* background-color: #1c69d4; */
-    display: flex;
-    margin-top: 5dvh;
-}
-
-#motor-video {
-    height: 100%;
-    width: 50%;
-    margin-bottom: 10px;
-    background-image: url("motorrad-1.jpg");
-    background-position: center;
-    background-size: cover;
-    /* background-color: burlywood; */
-}
-
-#motor-over {
-    display: none;
-}
-
-#motor-para {
-    height: 100%;
-    width: 50%;
-    color: white;
-    /* background-color: coral; */
-}
-
-#motor-para h2 {
-    font-size: 40px;
-    margin-top: 18%;
-    margin-left: 20%;
-}
-
-#motor-para h3 {
-    margin-top: 4dvh;
-    font-size: 30px;
-    margin-left: 20%;
-}
-
-#motor2-view {
-    height: 50vh;
-    width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-#motor2-left {
-    height: 100%;
-    width: 49%;
-    background-image: url("motorrad-2.jpg");
-    background-position: center;
-    background-size: cover;
-    padding: 20px;
-}
-
-#motor2-over {
-    display: none;
-}
-
-#motor2-right {
-    height: 100%;
-    width: 50%;
-}
-
-#motor2-right h2 {
-    font-size: 50px;
-    color: white;
-    margin-left: 2vw;
-    text-align: center;
-    margin-top: 12dvh;
-}
-
-#fr13 {
-    background-image: url(resources/fr13-img.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#fr14 {
-    background-image: url(resources/fr14-img.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#fr15 {
-    background-image: url(resources/fr15-img.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#fr16 {
-    background-image: url(resources/fr16-img.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-/* FOOTER */
-
-#footer {
-    height: fit-content;
-    width: 100%;
-    background-color: #262626;
-    margin-top: 10px;
-}
-
-#language {
     width: 40%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    padding-top: 12px;
-    color: #cbc2c2
+    justify-self: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#language {
+#panel-item a {
+    display: flex;
+    text-decoration: none;
     font-size: x-large;
-}
-
-#language h3:hover {
+    font-weight: 600;
     color: white;
 }
 
-#column {
-    position: relative;
-    margin-top: 30px;
+#panel-item a:hover {
+    color: #5a9af5;
+}
+
+#Series {
+    height: 100%;
+    width: screen;
+}
+
+.card-head {
+    font-size: 60px;
+    font-weight: 700;
     display: flex;
     justify-self: center;
-    height: fit-content;
-    width: 90%;
-    gap: 80px;
+    padding-bottom: 5px;
+    width: fit-content;
+    margin-top: 10px;
+    color: #c6d0de;
 }
 
-#column1 {
-    margin-left: 10px;
-    width: 30%;
+.bmw-one {
+    height: 70dvh;
+    width: 100dvw;
+    background-color: #5a9af5;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.co-h {
-    text-decoration: underline;
-    font-size: xx-large;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.co-a {
-    display: block;
-    font-weight: 600;
-    font-size: x-large;
-    padding: 10px;
-    color: #cbc2c2
-}
-
-#column2 {
-    margin-left: 10px;
-    width: 50%;
-}
-
-#column2 a {
-    text-decoration: none;
-}
-
-
-#column a:hover {
-    color: #fff;
-}
-
-#column i:hover {
-    color: #fff;
-}
-
-#tag-line {
-    position: absolute;
-    right: 0;
-}
-
-#tg-p {
-    font-size: 8dvh;
-    line-height: 65px;
-    color: white;
-    padding-top: 30px;
-}
-
-#last {
-    text-align: center;
-    font-size: xx-large;
-    margin: 30px;
-    color: white;
-}
-
-@media (max-width: 600px) {
-    #footer {
-        height: fit-content;
-        width: 100%;
-        background-color: #262626;
-        margin-top: 30px;
-    }
-
-    #language {
-        width: 90%;
-        display: flex;
-        flex-wrap: nowrap;
-        padding-top: 2px;
-        color: #cbc2c2;
-        font-size: x-small;
-    }
-
-    #chn {
-        writing-mode: horizontal-tb;
-        white-space: nowrap;
-    }
-
-    #column {
-        margin-top: 20px;
-        display: flex;
-        justify-self: center;
-        flex-wrap: nowrap;
-        height: fit-content;
-        width: 90dvw;
-    }
-
-    #column1 {
-        width: 40%;
-    }
-
-    #column1 h2 {
-        text-decoration: underline;
-        font-size: medium;
-        color: white;
-    }
-
-    #column1 a {
-        display: flex;
-        font-weight: 600;
-        padding: 10px;
-        color: #cbc2c2;
-        font-size: small;
-    }
-
-    #column2 {
-        width: 40%;
-    }
-
-    #column2 h2 {
-        text-decoration: underline;
-        font-size: medium;
-        color: white;
-    }
-
-    #column2 a {
-        display: block;
-        font-weight: 600;
-        padding: 10px;
-        color: #cbc2c2;
-        font-size: small;
-    }
-
-    #column h2 {
-        margin-bottom: 10px;
-    }
-
-    #tag-line {
-        display: none;
-    }
-
-    #tg-p {
-        font-size: medium;
-        line-height: 50px;
-        color: white;
-        padding-top: 30px;
-    }
-
-    #last {
-        text-align: center;
-        font-size: small;
-        margin: 30px;
-        color: white;
-    }
-}
-
-
-
-/* OVERLAY */
-
-#overlay {
-    position: fixed;
-
-    inset: 0;
-
-    width: 100%;
-    height: 100dvh;
-
+.side-name {
+    height: 95%;
+    width: 6%;
+    background-color: #074fb4;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background: rgba(0, 0, 0, 0.7);
-
-    z-index: 9999;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition:
-        opacity 0.3s ease,
-        visibility 0.3s ease;
 }
 
+.side-name p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 55px;
+    color: white;
+    font-weight: 700;
+    cursor: default;
+}
 
-/* Overlay box */
+.main-card {
+    height: 95%;
+    width: 92%;
+    background-color: antiquewhite;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
 
-#overlay-box {
+.s-card {
+    height: 95%;
+    width: 28%;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    justify-content: center;
     position: relative;
-
-    width: 95vw;
-    height: 95vh;
-
-    padding: 30px;
-
-    overflow-y: auto;
-
-    background: #111;
-
-    border-radius: 15px;
-
-    color: white;
-}
-
-
-#close {
-    position: absolute;
-
-    top: 20px;
-    right: 20px;
-
-    width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: transparent;
-
-    color: white;
-
-    border: 2px solid white;
-    border-radius: 50%;
-
-    font-size: 22px;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-
-#close:hover {
-    background-color: white;
-    color: black;
-}
-
-#title {
-    position: absolute;
-    left: 45%;
-    top: 20%;
-    margin-bottom: 25px;
-
-    text-align: center;
-
-    font-size: clamp(28px, 4vw, 45px);
-
-    color: white;
-}
-
-
-
-
-#image {
-    position: absolute;
-    left: 28%;
-    top: 2%;
-    width: 45dvw;
-    height: 50dvh;
-
-    margin: 0 auto 10px;
-
     overflow: hidden;
-
-    border-radius: 12px;
 }
 
+.under {
+    height: 60%;
+    width: 150%;
+    background-color: aliceblue;
+    rotate: 25deg;
+    z-index: 1;
+    position: absolute;
+    top: -30%;
+    left: -10%;
+}
 
-#image img {
-    width: 100%;
-    height: 100%;
-
+.c-name {
     display: block;
-
-    object-fit: cover;
+    font-size: xx-large;
+    padding: 10px;
+    font-weight: 600;
+    z-index: 10;
+    transform: translate(45%);
+    color: rgb(56, 54, 54);
+    position: absolute;
+    top: 1%;
 }
 
-
-#discription {
+.c-img {
+    height: 30%;
+    width: auto;
     position: absolute;
-    left: 2%;
-    bottom: 15%;
-    margin-bottom: 30px;
-
-    font-size: 18px;
-
-    line-height: 1.6;
-
-    color: #ccc;
-}
-
-
-#specs {
-    position: absolute;
-    right: 5%;
     top: 10%;
-    width: 50%;
-    display: none;
-    flex-direction: column;
-
-    gap: 12px;
+    left: 0%;
+    z-index: 20;
 }
 
-
-#specs p {
-    padding: 15px 20px;
-
-    background: #222;
-
-    border-left: 4px solid rgb(52, 51, 52);
-
-    border-radius: 6px;
-
-    font-size: 17px;
-
-    color: white;
+.price {
+    height: 5dvh;
+    width: 100%;
+    background-color: #537895;
+    position: absolute;
+    top: 40%;
 }
 
+.price p {
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    color: azure;
+}
 
-@media (max-width: 768px) {
+.c-table {
+    position: absolute;
+    bottom: 2%;
+    height: 50%;
+    width: 100%;
+}
 
-    #box {
-        flex-direction: column;
-        gap: 20px;
-    }
+th {
+    width: 40%;
+    font-size: large;
+    font-weight: 600;
+    color: aliceblue;
+}
 
-
-    .cd {
-        width: 80%;
-        min-height: 120px;
-    }
-
-
-    .t-btn {
-        width: 40dvw;
-        height: 50px;
-    }
-
-
-    #overlay-box {
-        width: 92vw;
-        height: 85dvh;
-
-        padding: 30px 20px;
-    }
-
-
-    #title {
-        margin-top: 20px;
-
-        font-size: 32px;
-    }
-
-
-    #image {
-        width: 100%;
-        height: 250px;
-    }
-
-
-    #discription {
-        font-size: 16px;
-    }
-
-
-    #specs p {
-        font-size: 15px;
-    }
-
+td {
+    width: 60%;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    color: #c6d0de;
 }
