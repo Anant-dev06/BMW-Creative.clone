@@ -477,25 +477,84 @@ body::-webkit-scrollbar {
     cursor: default;
 }
 
-.main-card {
+
+
+.card-section {
+    position: relative;
     height: 95%;
-    width: 92%;
+    width: 90%;
+    margin: 19px auto;
     background-color: antiquewhite;
-    margin-right: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+}
+
+.main-card {
+    height: 100%;
+    width: 95%;
+    margin-left: 20px;
+    min-width: 0;
+    padding: 10px 0;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.main-card::-webkit-scrollbar {
+    display: none;
 }
 
 .s-card {
     height: 95%;
-    width: 28%;
+    flex: 0 0 30%;
+    box-sizing: border-box;
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-    justify-content: center;
     position: relative;
     overflow: hidden;
+    scroll-snap-align: start;
 }
+
+
+/* Responsive card widths */
+@media (max-width: 900px) {
+    .s-card {
+        flex-basis: 48%;
+    }
+
+    .main-card {
+        gap: 4%;
+    }
+}
+
+@media (max-width: 600px) {
+    .s-card {
+        flex-basis: 100%;
+    }
+
+    .main-card {
+        gap: 15px;
+    }
+
+    .c-name {
+        font-size: x-large;
+    }
+
+    th,
+    td {
+        font-size: medium;
+    }
+}
+
 
 .under {
     height: 60%;
@@ -514,10 +573,11 @@ body::-webkit-scrollbar {
     padding: 10px;
     font-weight: 600;
     z-index: 10;
-    transform: translate(45%);
+    /* transform: translate(45%); */
     color: rgb(56, 54, 54);
     position: absolute;
     top: 1%;
+    left: 2%;
 }
 
 .c-img {
@@ -565,4 +625,36 @@ td {
     font-size: large;
     font-weight: 500;
     color: #c6d0de;
+}
+
+.card-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #09203f;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.card-arrow:hover {
+    background: #537895;
+}
+
+.card-arrow:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.left-arrow {
+    left: -25px;
+}
+
+.right-arrow {
+    right: 25px;
 }

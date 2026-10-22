@@ -18,57 +18,62 @@ gsap.ticker.add((time) => {
 // Disable GSAP lag smoothing
 gsap.ticker.lagSmoothing(0);
 
-document.querySelector("a").addEventListener("click", (e) => {
-    e.preventDefault();
-    lenis.scrollTo("#section2");
+document.querySelectorAll('a[href="#section2"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        lenis.scrollTo("#section2");
+    });
 });
 
 
 
 //LOADER 
-let main = document.querySelector("#main");
-
-lenis.stop();
-document.body.style.overflow = "hidden";
-
+const main = document.querySelector("#main");
+const loader = document.querySelector("#loader");
 const video = document.querySelector("#loader-video");
-video.playbackRate = 2;
 
 function unlockScroll() {
     lenis.start();
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "";
 }
 
-if (!sessionStorage.getItem("loaderShown")) {
+function hideLoader() {
+    if (!loader) {
+        if (main) main.style.opacity = "1";
+        unlockScroll();
+        return;
+    }
 
-    sessionStorage.setItem("loaderShown", "true");
+    gsap.to(loader, {
+        opacity: 0,
+        duration: 1,
+        onComplete() {
+            loader.remove();
+
+            if (main) main.style.opacity = "1";
+
+            unlockScroll();
+        }
+    });
+}
+
+if (!sessionStorage.getItem("loaderShown") && loader) {
+    lenis.stop();
+    document.body.style.overflow = "hidden";
+
+    if (video) video.playbackRate = 2;
 
     window.addEventListener("load", () => {
-
-        setTimeout(() => {
-
-            gsap.to("#loader", {
-                opacity: 0,
-                duration: 1,
-                onComplete() {
-                    document.querySelector("#loader").remove();
-                    document.querySelector("#main").style.opacity = "1";
-                    unlockScroll();
-                }
-            });
-
-        }, 2500);
-
-    });
-
+        sessionStorage.setItem("loaderShown", "true");
+        setTimeout(hideLoader, 2500);
+    }, { once: true });
 } else {
+    loader?.remove();
 
-    document.querySelector("#loader").remove();
-    document.querySelector("#main").style.opacity = "1";
+    if (main) main.style.opacity = "1";
+
     unlockScroll();
-
 }
-
 // Animation for navbar
 gsap.from(".navbar", {
     y: -100,
@@ -79,281 +84,80 @@ gsap.from(".navbar", {
 });
 
 //MENU
-let opbtn = document.querySelector("#op-btn");
-let menu = document.querySelector("#dd-list");
-let clbtn = document.querySelector("#cl-btn");
-
-gsap.set(menu, { x: 250 });
-
-opbtn.addEventListener("click", () => {
-    opbtn.style.display = "none";
-    clbtn.style.display = "block";
-    gsap.to(menu, { x: 0, duration: 0.8 });
-});
-
-clbtn.addEventListener("click", () => {
-    opbtn.style.display = "block";
-    clbtn.style.display = "";
-    gsap.to(menu, { x: 200, duration: 0.8 });
-});
-
-
-
-// ==========================
-// CARD DATA
-// ==========================
-
-const btn = {
-
-    b1: {
-
-        title: "Card-1",
-
-        image:
-            "https://images.pexels.com/photos/7048473/pexels-photo-7048473.jpeg",
-
-        discription:
-            "This is a First Card Of list.",
-
-        specs: [
-            ["User-1", "Anant"],
-            ["User-2", "Marco"],
-            ["User-1", "Anant"],
-            ["User-2", "Marco"],
-            ["User-1", "Anant"],
-            ["User-2", "Marco"],
-            ["User-1", "Anant"],
-            ["User-2", "Marco"],
-            ["User-1", "Anant"],
-            ["User-2", "Marco"]
-        ]
-
-    },
-
-
-    b2: {
-
-        title: "Card-2",
-
-        image:
-            "https://images.pexels.com/photos/27786742/pexels-photo-27786742.jpeg",
-
-        discription:
-            "This is a Second Card Of list.",
-
-        specs: [
-            ["User-3", "Muke"],
-            ["User-4", "Morales"]
-        ]
-
-    },
-
-
-    b3: {
-
-        title: "Card-3",
-
-        image:
-            "https://images.pexels.com/photos/36504592/pexels-photo-36504592.jpeg",
-
-        discription:
-            "This is a Third Card Of list.",
-
-        specs: [
-            ["User-5", "Antony"],
-            ["User-6", "Mauzi"]
-        ]
-
-    },
-
-
-    b4: {
-
-        title: "Card-4",
-
-        image:
-            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
-
-        discription:
-            "This is a Fourth Card Of list.",
-
-        specs: [
-            ["User-7", "Kumo"],
-            ["User-8", "Lago"]
-        ]
-
-    },
-
-    b5: {
-
-        title: "Card-5",
-
-        image:
-            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
-
-        discription:
-            "This is a Fourth Card Of list.",
-
-        specs: [
-            ["User-7", "Kumo"],
-            ["User-8", "Lago"]
-        ]
-
-    },
-
-    b6: {
-
-        title: "Card-6",
-
-        image:
-            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
-
-        discription:
-            "This is a Fourth Card Of list.",
-
-        specs: [
-            ["User-7", "Kumo"],
-            ["User-8", "Lago"]
-        ]
-
-    },
-
-    b7: {
-
-        title: "Card-7",
-
-        image:
-            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
-
-        discription:
-            "This is a Fourth Card Of list.",
-
-        specs: [
-            ["User-7", "Kumo"],
-            ["User-8", "Lago"]
-        ]
-
-    },
-
-    b8: {
-
-        title: "Card-8",
-
-        image:
-            "https://images.pexels.com/photos/38713531/pexels-photo-38713531.jpeg",
-
-        discription:
-            "This is a Fourth Card Of list.",
-
-        specs: [
-            ["User-7", "Kumo"],
-            ["User-8", "Lago"]
-        ]
-
-    }
-
-};
-
-
-// ==========================
-// SELECT ELEMENTS
-// ==========================
-
-const buttons = document.querySelectorAll(".btneft");
-
-const overlay = document.querySelector("#overlay");
-
-const title = document.querySelector("#title");
-
-const image = document.querySelector("#image");
-
-const desc = document.querySelector("#discription");
-
-const specs = document.querySelector("#specs");
-
-const close = document.querySelector("#close");
-
-
-// ==========================
-// BUTTON CLICK
-// ==========================
-
-buttons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-
-        // 1. Get data-card value
-        const btnId = button.dataset.btn;
-
-
-        // 2. Get the selected card
-        const btns = btn[btnId];
-
-
-        // 3. Set title
-        title.textContent = btns.title;
-
-
-        // 4. Remove previous image
-        image.innerHTML = "";
-
-
-        // 5. Create image
-        const img = document.createElement("img");
-
-
-        // 6. Set image source
-        img.src = btns.image;
-
-
-        // 7. Set alt text
-        img.alt = btns.title;
-
-
-        // 8. Add image to image container
-        image.appendChild(img);
-
-
-        // 9. Set description
-        desc.textContent = btns.discription;
-
-
-        // 10. Clear previous specs
-        specs.innerHTML = "";
-
-
-        // 11. Add specs
-        btns.specs.forEach(spec => {
-
-            const p = document.createElement("p");
-
-            p.textContent = `${spec[0]} : ${spec[1]}`;
-
-            specs.appendChild(p);
-
+const opbtn = document.querySelector("#op-btn");
+const menu = document.querySelector("#dd-list");
+const clbtn = document.querySelector("#cl-btn");
+
+if (opbtn && menu && clbtn) {
+    gsap.set(menu, { x: 250 });
+
+    opbtn.addEventListener("click", () => {
+        opbtn.style.display = "none";
+        clbtn.style.display = "block";
+
+        gsap.to(menu, {
+            x: 0,
+            duration: 0.8,
+            onStart: () => {
+                menu.style.pointerEvents = "auto";
+            }
         });
-
-
-        // 12. Show overlay
-        overlay.style.opacity = "1";
-
-        overlay.style.visibility = "visible";
-
     });
 
-});
+    clbtn.addEventListener("click", () => {
+        opbtn.style.display = "block";
+        clbtn.style.display = "";
+
+        gsap.to(menu, {
+            x: 250,
+            duration: 0.8,
+            onComplete: () => {
+                menu.style.pointerEvents = "none";
+            }
+        });
+    });
+}
 
 
-// ==========================
-// CLOSE OVERLAY
-// ==========================
+// crosoul
 
-close.addEventListener("click", () => {
+const mainCard = document.querySelector("#mainCard");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
 
-    overlay.style.opacity = "0";
+if (mainCard && prevBtn && nextBtn) {
+    function getCardStep() {
+        const card = mainCard.querySelector(".s-card");
+        if (!card) return 0;
 
-    overlay.style.visibility = "hidden";
+        const gap = parseFloat(getComputedStyle(mainCard).columnGap) || 0;
 
-});
+        return card.getBoundingClientRect().width + gap;
+    }
 
+    function updateButtons() {
+        const maxScroll = mainCard.scrollWidth - mainCard.clientWidth;
+
+        prevBtn.disabled = mainCard.scrollLeft <= 2;
+        nextBtn.disabled = mainCard.scrollLeft >= maxScroll - 2;
+    }
+
+    prevBtn.addEventListener("click", () => {
+        mainCard.scrollBy({
+            left: -getCardStep(),
+            behavior: "smooth"
+        });
+    });
+
+    nextBtn.addEventListener("click", () => {
+        mainCard.scrollBy({
+            left: getCardStep(),
+            behavior: "smooth"
+        });
+    });
+
+    mainCard.addEventListener("scroll", updateButtons);
+    window.addEventListener("resize", updateButtons);
+
+    updateButtons();
+}
