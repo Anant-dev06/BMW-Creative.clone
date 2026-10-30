@@ -581,11 +581,11 @@ body::-webkit-scrollbar {
 }
 
 .c-img {
-    height: 30%;
+    height: 32%;
     width: auto;
     position: absolute;
     top: 10%;
-    left: 0%;
+    left: 7%;
     z-index: 20;
 }
 
