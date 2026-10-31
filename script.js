@@ -121,11 +121,14 @@ if (opbtn && menu && clbtn) {
 
 // crosoul
 
-const mainCard = document.querySelector("#mainCard");
-const prevBtn = document.querySelector("#prevBtn");
-const nextBtn = document.querySelector("#nextBtn");
+document.querySelectorAll("#mainCard").forEach((mainCard) => {
+    const section = mainCard.closest(".card-section") || mainCard.parentElement;
 
-if (mainCard && prevBtn && nextBtn) {
+    const prevBtn = section.querySelector("#prevBtn");
+    const nextBtn = section.querySelector("#nextBtn");
+
+    if (!prevBtn || !nextBtn) return;
+
     function getCardStep() {
         const card = mainCard.querySelector(".s-card");
         if (!card) return 0;
@@ -160,4 +163,4 @@ if (mainCard && prevBtn && nextBtn) {
     window.addEventListener("resize", updateButtons);
 
     updateButtons();
-}
+});

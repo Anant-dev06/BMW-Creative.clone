@@ -658,3 +658,8 @@ td {
 .right-arrow {
     right: 2px;
 }
+
+#wins {
+    height: 100%;
+    width: 100%;
+}
