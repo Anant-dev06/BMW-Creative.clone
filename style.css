@@ -443,14 +443,14 @@ body::-webkit-scrollbar {
     justify-self: center;
     padding-bottom: 5px;
     width: fit-content;
-    margin-top: 10px;
+    margin-top: 30px;
     color: #c6d0de;
 }
 
 .bmw-one {
     height: 70dvh;
     width: 100dvw;
-    background-color: #5a9af5;
+    background-color: #20242B;
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -460,7 +460,7 @@ body::-webkit-scrollbar {
 .side-name {
     height: 95%;
     width: 6%;
-    background-color: #074fb4;
+    background-color: #242A33;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
@@ -484,7 +484,7 @@ body::-webkit-scrollbar {
     height: 95%;
     width: 90%;
     margin: 19px auto;
-    background-color: antiquewhite;
+    background-color: #151B24;
     display: flex;
     align-items: center;
 }
@@ -659,7 +659,7 @@ td {
     right: 2px;
 }
 
-#wins {
+#History {
     height: 100%;
     width: 100%;
 }
