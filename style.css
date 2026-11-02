@@ -408,15 +408,19 @@ body::-webkit-scrollbar {
     width: 100%;
     border-top: 2px solid slategray;
     border-bottom: 2px solid slategray;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
-#panel-item {
-    height: 100%;
-    width: 40%;
+
+
+#panel-right {
     display: flex;
-    justify-self: center;
-    align-items: center;
-    justify-content: space-evenly;
+    margin-left: 20px;
+    font-size: xx-large;
+    color: whitesmoke;
 }
 
 #panel-item a {
@@ -662,4 +666,59 @@ td {
 #History {
     height: 100%;
     width: 100%;
+}
+
+.timeline {
+    height: 100%;
+    width: 100%;
+    margin-top: 6dvh;
+}
+
+.f-time {
+    height: 100%;
+    width: 100%;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.f-time i {
+    display: flex;
+    font-size: 40px;
+    color: white;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.f-head {
+    color: white;
+    font-size: 45px;
+    letter-spacing: -2px;
+    padding-left: 30px;
+}
+
+.f-item {
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.f-img {
+    height: 55dvh;
+    width: 100%;
+    margin-top: 5dvh;
+}
+
+.f-para {
+    width: 50dvw;
+    font-size: large;
+    font-weight: 600;
+    text-align: left;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5dvh;
+    margin-left: 5dvw;
+    color: white;
 }
