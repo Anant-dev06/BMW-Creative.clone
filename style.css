@@ -671,36 +671,56 @@ td {
 .timeline {
     height: 100%;
     width: 100%;
-    margin-top: 6dvh;
+    margin-top: 2dvh;
 }
 
 .f-time {
     height: 100%;
-    width: 100%;
-    border-top: 3px solid gray;
+    width: 85%;
     border-bottom: 3px solid gray;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
+    justify-self: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .f-time i {
     display: flex;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     align-self: center;
     margin-right: 30px;
 }
 
+.f-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ri-arrow-up-long-line {
+    display: none;
+}
+
+
 .f-head {
     color: white;
-    font-size: 45px;
-    letter-spacing: -2px;
+    font-size: 35px;
+    letter-spacing: -1px;
     padding-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.f-head span {
+    font-weight: 800;
+    color: #537895;
 }
 
 .f-item {
+    display: none;
     height: 100dvh;
     width: 100dvw;
 }

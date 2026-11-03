@@ -164,3 +164,82 @@ document.querySelectorAll("#mainCard").forEach((mainCard) => {
 
     updateButtons();
 });
+
+
+
+// Time line animation and effect
+const timelineItems = document.querySelectorAll(".f-time");
+timelineItems.forEach(item => {
+
+    const button = item.querySelector(".f-box");
+
+    const content = item.querySelector(".f-item");
+
+    const downArrow = item.querySelector(".ri-arrow-down-line");
+    const upArrow = item.querySelector(".ri-arrow-up-long-line");
+
+
+    // Initial state
+    gsap.set(content, {
+        height: 0,
+        opacity: 0,
+        overflow: "hidden",
+        display: "none"
+    });
+
+    upArrow.style.display = "none";
+
+
+    button.addEventListener("click", () => {
+
+        const isOpen = content.style.display === "block";
+
+
+        if (!isOpen) {
+
+            // OPEN CONTENT
+            content.style.display = "block";
+
+            gsap.fromTo(content,
+                {
+                    height: 0,
+                    opacity: 0
+                },
+                {
+                    height: "100dvh",
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: "power2.out"
+                }
+            );
+
+
+            // DOWN → UP
+            downArrow.style.display = "none";
+            upArrow.style.display = "block";
+
+
+        } else {
+
+            // CLOSE CONTENT
+            gsap.to(content, {
+                height: 0,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.inOut",
+
+                onComplete: () => {
+                    content.style.display = "none";
+                }
+            });
+
+
+            // UP → DOWN
+            upArrow.style.display = "none";
+            downArrow.style.display = "block";
+
+        }
+
+    });
+
+});
