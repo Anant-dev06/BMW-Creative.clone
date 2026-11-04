@@ -526,8 +526,17 @@ body::-webkit-scrollbar {
     position: relative;
     overflow: hidden;
     scroll-snap-align: start;
+    position: relative;
 }
 
+.s-logo {
+    height: 7%;
+    width: 10%;
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    z-index: 200;
+}
 
 /* Responsive card widths */
 @media (max-width: 900px) {
@@ -678,6 +687,7 @@ td {
     height: 100%;
     width: 85%;
     border-bottom: 3px solid gray;
+    margin-bottom: 20px;
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -741,4 +751,14 @@ td {
     margin-top: 5dvh;
     margin-left: 5dvw;
     color: white;
+}
+
+#footer {
+    height: 40dvh;
+    width: 95%;
+    display: flex;
+    justify-self: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
 }
