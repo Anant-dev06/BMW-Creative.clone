@@ -600,6 +600,12 @@ body::-webkit-scrollbar {
     top: 10%;
     left: 7%;
     z-index: 20;
+    overflow: hidden;
+}
+
+.s-card:hover .c-img {
+    transform: scale(1.04);
+    transition: ease 0.6s;
 }
 
 .price {
@@ -895,6 +901,7 @@ td {
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
+    background-color: #151B24;
 }
 
 #d-head {
@@ -984,6 +991,7 @@ td {
 .dc-img {
     height: 60%;
     width: 100%;
+    overflow: hidden;
 }
 
 .dc-img img {
@@ -991,6 +999,11 @@ td {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.dc-img:hover img {
+    transform: scale(1.05);
+    transition: 0.8s ease;
 }
 
 .dc-detail {
