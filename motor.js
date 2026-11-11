@@ -1,9 +1,3 @@
-
-
-
-
-
-
 const imgs = document.querySelectorAll(".img-b");
 
 imgs.forEach((img) => {
@@ -33,44 +27,66 @@ imgs.forEach((img) => {
 
 });
 
+const open = document.querySelector("#menu");
+const close = document.querySelector("#menu-close");
+const mbox = document.querySelector("#lnk-box");
+const nvbk = document.querySelector("#nav-link");
+const rn = document.querySelector("#right-nav");
+rn.classList.add("rn");
 
-let menu = document.querySelector("#menu");
-let menuPage = document.querySelector("#menu-page");
+open.addEventListener("click", () => {
 
-let open = false;
+    open.style.display = "none";
+    close.style.display = "block";
+    rn.style.borderTop = "4px solid black"
 
-menu.addEventListener("click", () => {
-    console.log("clicked");
-
-    if (!open) {
-
-        menu.classList.replace("ri-menu-line", "ri-close-line");
-
-        gsap.to("#menu-page", {
-
-            left: "0%",
+    // Show menu
+    gsap.fromTo(mbox,
+        {
+            y: -400,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
             duration: 0.8,
-            ease: "ease"
+            ease: "power2.out"
+        }
+    );
 
-        });
+    // Blur background
+    gsap.to(nvbk, {
+        filter: "blur(8px)",
+        duration: 0.5
+    });
 
-        open = true;
+});
 
-    } else {
+close.addEventListener("click", () => {
+    rn.style.borderTop = "none";
 
-        menu.classList.replace("ri-close-line", "ri-menu-line");
+    // Hide menu
+    gsap.to(mbox, {
+        y: -400,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.in",
+        onComplete: () => {
+            open.style.display = "block";
+            close.style.display = "none";
 
-        gsap.to("#menu-page", {
+            gsap.set(mbox, {
+                y: -400,
+                opacity: 1
+            });
+        }
+    });
 
-            left: "-60%",
-            duration: 0.8,
-            ease: "ease"
-
-        });
-
-        open = false;
-
-    }
+    // Remove background blur
+    gsap.to(nvbk, {
+        filter: "blur(0px)",
+        duration: 0.5
+    });
 
 });
 

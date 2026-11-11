@@ -26,7 +26,7 @@ body {
 
 
 #nav-bar {
-    height: 12vh;
+    height: fit-content;
     width: 100%;
     background-color: aliceblue;
     display: flex;
@@ -36,13 +36,72 @@ body {
 }
 
 #nav-content {
-    height: 12vh;
+    height: 10dvh;
     width: 100%;
     background-color: aliceblue;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     color: black;
+    z-index: 300;
+}
+
+#nav-links {
+    height: 93dvh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    z-index: 100;
+    position: absolute;
+    top: 9%;
+}
+
+#lnk-box {
+    height: 30dvh;
+    width: 100%;
+    background-color: aliceblue;
+    z-index: 150;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    /* transform: translateY(-400px); */
+}
+
+#box-a {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+}
+
+#box-a a {
+    text-decoration: none;
+    color: black;
+}
+
+#box-btm {
+    height: 10dvh;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+#box-btm p {
+    font-size: x-large;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 4px solid black;
+    word-spacing: -1px;
 }
 
 #left-nav {
@@ -52,6 +111,8 @@ body {
     margin-left: 1vw;
     display: flex;
     gap: 40px;
+    z-index: 200;
+    background-color: aliceblue;
 }
 
 #sbox {
@@ -102,42 +163,14 @@ body {
     position: relative;
 }
 
-#menu-page {
-
-    position: fixed;
-
-    top: 12%;
-    left: -60%;
-
-    width: 55%;
-    height: 10vh;
-
-    background: #f0f8ffb5;
-    backdrop-filter: blur("20px");
-
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 35px;
-
-    transition: .8s;
-
-    z-index: 1000;
+#menu-close {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
 }
 
-#menu-page a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5vw;
-    font-weight: 300;
-}
-
-#menu-page a:hover {
-    color: cornflowerblue;
-}
 
 #right-nav {
     height: 9vh;
@@ -145,6 +178,9 @@ body {
     /* background-color: aquamarine; */
     margin-right: 1vw;
     display: flex;
+    z-index: 200;
+    background-color: aliceblue;
+    margin-top: 5px;
 }
 
 #right-nav img {
