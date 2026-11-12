@@ -244,93 +244,6 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-#alphabet {
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    gap: 0.5vw;
-    border-top: 2px solid rgb(141, 136, 136);
-    border-bottom: 2px solid rgb(141, 136, 136);
-    margin-top: 81vh;
-    background: rgba(48, 47, 47, 0.8);
-    backdrop-filter: blur(10px);
-}
-
-#alphabet h5 {
-    font-size: 1.7vw;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-style: italic;
-    letter-spacing: 4px;
-    border-bottom: 2px solid rgb(68, 65, 65);
-    margin-left: 4.5vw;
-    margin-right: 1.6vw;
-}
-
-#alphabet h6 {
-    font-size: 1.4vw;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: 3px;
-    padding: 0.6vw 0.8vw;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 1px solid #fbf5f500;
-}
-
-#alphabet h6:hover {
-    border: 2px solid rgb(94, 160, 235);
-}
-
-#B-word {
-    color: rgb(203, 47, 47);
-    font-weight: 500;
-}
-
-#M-word {
-    color: rgb(9, 107, 110);
-    font-weight: 600;
-}
-
-#W-word {
-    color: rgb(7, 156, 248);
-    font-weight: 500;
-}
-
-@media (max-width: 600px) {
-    #center {
-        height: 30dvh;
-        padding: 0px;
-
-        width: screen;
-        background-image: url("bmw-phero-Photoroom.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #content {
-        height: 100%;
-        width: 100%;
-        /* background-image: url("bmw-phero-Photoroom.png");
-        background-position: center;
-        background-size: cover; */
-    }
-
-    #hrimg {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    #alphabet {
-        display: none;
-    }
-}
-
 #why {
     width: 90%;
     height: 60dvh;
@@ -1029,4 +942,249 @@ td {
     margin-top: 30px;
     letter-spacing: 1px;
     padding: 10px;
+}
+
+@media (max-width:700px) {
+    #why {
+        width: 90%;
+        height: 60dvh;
+        overflow: hidden;
+        position: relative;
+        left: 5%;
+    }
+
+    #why-scroll {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        width: max-content;
+        height: 100%;
+        animation: whyMove 25s linear infinite;
+    }
+
+    .why-img {
+        flex-shrink: 0;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    /* Different sizes and vertical positions */
+    .why-img-i {
+        width: 90vw;
+        height: 30vh;
+        align-self: flex-start;
+        margin-top: 10dvh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .img-2 {
+        width: 90vw;
+        height: 35vh;
+        align-self: center;
+    }
+
+    .img-3 {
+        width: 90vw;
+        height: 18vh;
+        align-self: flex-end;
+        margin-bottom: 4vh;
+    }
+
+    .img-4 {
+        width: 90vw;
+        height: 30vh;
+        align-self: center;
+    }
+
+    .img-5 {
+        width: 90vw;
+        height: 30vh;
+        align-self: center;
+    }
+
+    @keyframes whyMove {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    .why-img-i:hover {
+        transform: scale(1.05);
+        transition: ease 0.8s;
+    }
+
+
+    #panel {
+        height: 6dvh;
+        width: 100%;
+        border-top: 2px solid slategray;
+        border-bottom: 2px solid slategray;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #panel-right {
+        display: flex;
+        margin-left: 20px;
+        font-size: medium;
+        color: whitesmoke;
+    }
+
+    #panel-item a {
+        display: flex;
+        text-decoration: none;
+        font-size: x-large;
+        font-weight: 600;
+        color: white;
+    }
+
+    #panel-item a:hover {
+        color: #5a9af5;
+    }
+
+
+
+    #design {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-self: center;
+        background-color: #151B24;
+    }
+
+    #d-head {
+        font-size: 35px;
+        font-weight: 300;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    #d-img {
+        height: 30dvh;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #d-para {
+        height: 50dvh;
+        width: 95%;
+        font-size: medium;
+        margin-top: 20px;
+        padding: 10px;
+        padding-left: 10px;
+        line-height: 25px;
+        color: white;
+    }
+
+    #designers {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 20px;
+        color: white;
+        background-color: #151B24;
+    }
+
+    #dg-head {
+        font-size: 27px;
+        letter-spacing: 0px;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 35px;
+    }
+
+    #dg-head span {
+        font-weight: 400;
+    }
+
+    #dg-para {
+        width: 95%;
+        font-size: medium;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+
+    #dg-img {
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 30px;
+    }
+
+    #dg-h3 {
+        font-size: xx-large;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+
+    #dg-box {
+        height: fit-content;
+        width: 96%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-self: center;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .dg-card {
+        height: 50dvh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .dc-img {
+        height: 60%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .dc-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .dc-img:hover img {
+        transform: scale(1.05);
+        transition: 0.8s ease;
+    }
+
+    .dc-detail {
+        height: 40%;
+        width: 100%;
+    }
+
+    .dc-name {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 20px;
+        line-height: 35px;
+    }
+
+    .dc-name span {
+        font-weight: 400;
+    }
+
+    .dc-post {
+        font-size: large;
+        font-weight: 500;
+        margin-top: 10px;
+        letter-spacing: 1px;
+        padding: 10px;
+    }
 }

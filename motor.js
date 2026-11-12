@@ -38,7 +38,7 @@ open.addEventListener("click", () => {
 
     open.style.display = "none";
     close.style.display = "block";
-    rn.style.borderTop = "4px solid black"
+    rn.style.borderTop = "4px solid black";
 
     // Show menu
     gsap.fromTo(mbox,
@@ -64,6 +64,7 @@ open.addEventListener("click", () => {
 
 close.addEventListener("click", () => {
     rn.style.borderTop = "none";
+
 
     // Hide menu
     gsap.to(mbox, {
