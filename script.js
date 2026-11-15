@@ -74,49 +74,6 @@ if (!sessionStorage.getItem("loaderShown") && loader) {
 
     unlockScroll();
 }
-// Animation for navbar
-gsap.from(".navbar", {
-    y: -100,
-    delay: 1,
-    duration: 1,
-    opacity: 0,
-    stagger: 0.5
-});
-
-//MENU
-const opbtn = document.querySelector("#op-btn");
-const menu = document.querySelector("#dd-list");
-const clbtn = document.querySelector("#cl-btn");
-
-if (opbtn && menu && clbtn) {
-    gsap.set(menu, { x: 250 });
-
-    opbtn.addEventListener("click", () => {
-        opbtn.style.display = "none";
-        clbtn.style.display = "block";
-
-        gsap.to(menu, {
-            x: 0,
-            duration: 0.8,
-            onStart: () => {
-                menu.style.pointerEvents = "auto";
-            }
-        });
-    });
-
-    clbtn.addEventListener("click", () => {
-        opbtn.style.display = "block";
-        clbtn.style.display = "";
-
-        gsap.to(menu, {
-            x: 250,
-            duration: 0.8,
-            onComplete: () => {
-                menu.style.pointerEvents = "none";
-            }
-        });
-    });
-}
 
 
 // crosoul
@@ -243,3 +200,32 @@ timelineItems.forEach(item => {
     });
 
 });
+
+
+
+//menu animation part
+
+let menubtn = document.querySelector("#menu-btn");
+let menuclose = document.querySelector("#menu-close");
+let menubox = document.querySelector("#menu-box");
+let menucontainer = document.querySelector("#menu-container");
+
+menubtn.addEventListener("click", () => {
+    menubtn.style.display = "none";
+    menuclose.style.display = "block";
+    gsap.to(menucontainer, {
+        y: 0,
+        duration: 0.8,
+        opacity: 1
+    })
+})
+
+menuclose.addEventListener("click", () => {
+    menubtn.style.display = "block";
+    menuclose.style.display = "none";
+    gsap.to(menucontainer, {
+        y: -300,
+        duration: 0.8,
+
+    })
+})
