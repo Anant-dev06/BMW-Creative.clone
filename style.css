@@ -1051,8 +1051,8 @@ td {
         width: 100%;
         height: 23dvh;
         position: absolute;
-        top: 7%;
-        gap: 15px;
+        top: 5%;
+        gap: 12px;
     }
 
     #menu-close {
@@ -1070,7 +1070,7 @@ td {
     #hero-detail {
         position: absolute;
         left: 1%;
-        top: 12%;
+        top: 10%;
         height: 60dvh;
         width: 90dvw;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -1079,14 +1079,7 @@ td {
 
     #m3 {
         display: none;
-        font-size: 20dvh;
-        font-weight: 700;
-        letter-spacing: 10px;
-        position: absolute;
-        right: 10%;
-        top: 2%;
-        color: #5a9af5;
-        opacity: 15%;
+
     }
 
     #hero-detail h1 {
@@ -1105,7 +1098,7 @@ td {
     }
 
     #detail-para {
-        height: 25%;
+        height: 28%;
         width: 100%;
         border-left: 5px solid rgb(98, 98, 112);
         border-radius: 20px;
@@ -1116,7 +1109,7 @@ td {
     }
 
     #detail-para p {
-        font-size: large;
+        font-size: medium;
         font-weight: 500;
     }
 
@@ -1782,7 +1775,7 @@ td {
     }
 
     #l-foot h1 {
-        font-size: 40px;
+        font-size: 35px;
         margin-top: 20px;
         padding-bottom: 10px;
     }
@@ -1795,7 +1788,7 @@ td {
 
     #scl {
         height: 5dvh;
-        width: 60%;
+        width: 80%;
         margin-top: 10px;
         margin-left: 10px;
     }
@@ -1823,7 +1816,7 @@ td {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        margin-bottom: 5dvh;
+        margin-bottom: 1dvh;
     }
 
     #quick {
@@ -1848,7 +1841,7 @@ td {
     }
 
     .f-h {
-        font-size: 35px;
+        font-size: 32px;
         text-align: center;
         color: white;
     }
@@ -1862,7 +1855,7 @@ td {
     }
 
     .fr-a a {
-        font-size: x-large;
+        font-size: large;
         display: block;
         text-decoration: none;
         color: white;
